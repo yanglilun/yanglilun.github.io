@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/8 | Yang_li&#39;s BLOG</title>
+  <title>集合框架 | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yang_li&#39;s BLOG">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="集合框架List - 有序集合​    常见的List集合类ArrayList，LinkedList，Victor 可以存储任何类型的元素 1List l = new ArrayList();   .addall(集合)【添加某个集合所有元素】  .set(下标，对象)【替换某个位置的元素】  .contains(object)【是否含有某个元素】  contains比较也是用equals，但是">
+<meta name="keywords" content="collection">
+<meta property="og:type" content="article">
+<meta property="og:title" content="集合框架">
+<meta property="og:url" content="http://yoursite.com/2019/08/12/集合框架/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
+<meta property="og:description" content="集合框架List - 有序集合​    常见的List集合类ArrayList，LinkedList，Victor 可以存储任何类型的元素 1List l = new ArrayList();   .addall(集合)【添加某个集合所有元素】  .set(下标，对象)【替换某个位置的元素】  .contains(object)【是否含有某个元素】  contains比较也是用equals，但是">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-26T09:51:54.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yang_li&#39;s BLOG">
+<meta name="twitter:title" content="集合框架">
+<meta name="twitter:description" content="集合框架List - 有序集合​    常见的List集合类ArrayList，LinkedList，Victor 可以存储任何类型的元素 1List l = new ArrayList();   .addall(集合)【添加某个集合所有元素】  .set(下标，对象)【替换某个位置的元素】  .contains(object)【是否含有某个元素】  contains比较也是用equals，但是">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -146,405 +151,323 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-集合框架" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      集合框架
+    </h1>
+  
+
+        
+        <a href="/2019/08/12/集合框架/" class="archive-article-date">
+  	<time datetime="2019-08-12T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h1><h2 id="List-有序集合"><a href="#List-有序集合" class="headerlink" title="List - 有序集合"></a>List - 有序集合</h2><p>​    常见的List集合类<strong>ArrayList，LinkedList，Victor</strong></p>
+<p>可以存储任何类型的元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List l = <span class="keyword">new</span> ArrayList();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>.addall(集合)【添加某个集合所有元素】</p>
+</li>
+<li><p>.set(下标，对象)【替换某个位置的元素】</p>
+</li>
+<li><p>.contains(object)【是否含有某个元素】</p>
+<blockquote>
+<p>contains比较也是用equals，但是自定义类有多个属性</p>
+<p>得<strong>重写equals</strong>，比较每一个属性。</p>
+</blockquote>
+</li>
+<li><p>.remove()【删除某个元素】</p>
+<blockquote>
+<p>​    最好用iterator迭代器，因为size是实时变化的，数组也是实时往上移动的，所以根据size循环时容易产生和预期不一样的结果</p>
+<p>​    或者用for循环，每次删除第一个元素，循环最开始的长度次数、</p>
+<p>​    不允许使用foreach遍历删除</p>
+</blockquote>
+</li>
+<li><p>.sort(比较器Comparator接口)【比较元素】</p>
+<blockquote>
+<p>需要自己写一个比较器实现comparable接口</p>
+<p>大于0（前面&gt;后面）不交换</p>
+<p>等于0（相等)        不交换</p>
+<p>小于0（前面&lt;后面）交换</p>
+</blockquote>
+</li>
+<li><p>.subList(起点，终点不包含)【取数组中某一段】（返回动态数组）</p>
+</li>
+</ul>
+<h3 id="ArrayList-数组结构"><a href="#ArrayList-数组结构" class="headerlink" title="ArrayList - 数组结构"></a>ArrayList - 数组结构</h3><p>​    基于数组实现，添加元素，得重新拷贝数组，增加数组容量。插入元素整体移动</p>
+<p>​    <strong>【查询快，插入耗资源】</strong></p>
+<ul>
+<li>ArrayList&lt;类型&gt; 变量名 【定义一个arraylist对象】</li>
+<li>.get(下标)【获取第几个对象】</li>
+<li>.add(值);【添加】</li>
+<li>.add(下标，值)【插入】</li>
+<li>.remove(值)【移除某个元素】</li>
+<li>.remove(下标);【移除某个位置的元素】</li>
+<li>.clear()【清空数组】</li>
+<li>.isEmpty();【是否为空】</li>
+<li>.forEach(接口)；【遍历数组】(形参)-&gt;{syso(形参)}</li>
+<li>Collections.sort(对象) 【自然排序】</li>
+<li>ensureCapacity(新的容量) 【扩容】</li>
+<li>.iterator()【获取迭代器】</li>
+<li>.trimToSize() 【去除多余空间】</li>
+<li>.toArray()【转成静态数组】<strong>看下面！！</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Student[] stu = <span class="keyword">new</span> Student[list.size()];</span><br><span class="line">stu = list.toArray(stu);</span><br></pre></td></tr></table></figure>
+
+<h3 id="LinkedList-链表结构"><a href="#LinkedList-链表结构" class="headerlink" title="LinkedList - 链表结构"></a>LinkedList - 链表结构</h3><p>​    基于链表实现，没有数组结构，但是用法基本和ArrayList一样。</p>
+<ul>
+<li><p>.push(元素)【将元素压入数组（栈顶）第一个】</p>
+</li>
+<li><p>.pop(元素)【将栈顶（第一个）元素弹出】</p>
+</li>
+<li><p>.add(元素)【将元素加在数组最后面】</p>
+<p><strong>【查询慢，插入更新快】</strong></p>
+</li>
+</ul>
+<h3 id="Victor-数组结构（线程）"><a href="#Victor-数组结构（线程）" class="headerlink" title="Victor - 数组结构（线程）"></a>Victor - 数组结构（线程）</h3><p>​     victor也是基于数组实现，但是提供了线程同步（<strong>线程安全</strong>）的操作，<strong>因为安全所以效率不高</strong></p>
+<h2 id="Iterator-迭代器"><a href="#Iterator-迭代器" class="headerlink" title="Iterator - 迭代器"></a>Iterator - 迭代器</h2><ul>
+<li>.hasNext()【是否有下一个元素】</li>
+<li>.next()【获取下一个】</li>
+<li>.remove()【移除】</li>
+</ul>
+<h2 id="ListIterator-迭代器2"><a href="#ListIterator-迭代器2" class="headerlink" title="ListIterator - 迭代器2"></a>ListIterator - 迭代器2</h2><ul>
+<li>.hasPrevious()【是否有上一个元素】</li>
+<li>.Previous()【返回上一个元素】</li>
+</ul>
+<h2 id="Set-无序集合"><a href="#Set-无序集合" class="headerlink" title="Set - 无序集合"></a>Set - 无序集合</h2><p>​    <strong>重复的元素只会显示一个</strong></p>
+<h3 id="HashSet-基于哈希码实现"><a href="#HashSet-基于哈希码实现" class="headerlink" title="HashSet - 基于哈希码实现"></a>HashSet - 基于哈希码实现</h3><p>​    .add()【添加到集合】</p>
+<blockquote>
+<p>添加到hashcode所在位置，按hashcode排序</p>
+</blockquote>
+<h3 id="Treeset-基于树状结构实现"><a href="#Treeset-基于树状结构实现" class="headerlink" title="Treeset - 基于树状结构实现"></a>Treeset - 基于树状结构实现</h3><p>​    .add()【添加到集合】（必须给<strong>实现comparable的类</strong>，或者给定该集合的 比较器<strong>（comparator）</strong></p>
+<blockquote>
+<p>如果添加的类型实现了 <strong>比较接口</strong>（comparable），那么add时会按照comparable实现的进行排序存放</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个带有匿名比较器（comparator）的treeset</span></span><br><span class="line">TreeSet ts = <span class="keyword">new</span> TreeSet(<span class="keyword">new</span> Comparator&lt;Student&gt;()&#123;</span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Student o1, Student o2)</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> o1.getAge()-o2.getAge();</span><br><span class="line">			&#125;	</span><br><span class="line">		&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Map-键值对"><a href="#Map-键值对" class="headerlink" title="Map - 键值对"></a>Map - 键值对</h2><p>​    元素存储采用键值对 （Key-Value）结构，Key不允许重复，每一个Key对应一个Value对象</p>
+<p>​    分为*<em>HaspMap，TreeMap，Hashtable *</em></p>
+<ul>
+<li><p>Map&lt;键类型，值类型&gt;【定义Map】</p>
+</li>
+<li><p>.put(键，元素)【存入元素】</p>
+</li>
+<li><p>.get(键)【获取某个元素】</p>
+<blockquote>
+<p>如果给的键是自定义类型，则在类型中<strong>重写hashcode和equals</strong>方法才能判断两个键是否相等</p>
+</blockquote>
+</li>
+<li><p>.KeySet()【获取所有键】（返回Set集合）</p>
+</li>
+<li><p>.entrySet()【获取所有键值对集合】（返回Set集合）</p>
+</li>
+</ul>
+<h2 id="properties-属性类（基于HashMap）"><a href="#properties-属性类（基于HashMap）" class="headerlink" title="properties 属性类（基于HashMap）"></a>properties 属性类（基于HashMap）</h2><ul>
+<li>System.getProperties()【获得系统属性】</li>
+<li>.peopertyNames()【获取键的枚举】</li>
+<li>.load(输入流)【加载输入流到属性对象p】</li>
+<li>.getProperty(Key)【根据键获取值】</li>
+<li>.setProperty(Key,Value)【根据键设置值】</li>
+<li>.put(Key，Value)【添加键值对】</li>
+<li>.remove(Key)【根据key删除键值对】</li>
+<li>.store(输出流)【存储p的记录】</li>
+<li>.list(输出流[System.out])【查看当前所有的记录】</li>
+</ul>
+<h2 id="Collections-集合处理工具"><a href="#Collections-集合处理工具" class="headerlink" title="Collections - 集合处理工具"></a>Collections - 集合处理工具</h2><ul>
+<li><p>Collections.binarySearch(list, 值)【查找该值的下标】</p>
+</li>
+<li><p>.max()【获取该List对象中最大值】</p>
+</li>
+<li><p>.min()【获取该List对象中最小值】</p>
+</li>
+<li><p>.reverse())【反转List所有元素】</p>
+</li>
+<li><p>.shuffle()【打乱集合】</p>
+</li>
+<li><p>.sort()【排序】</p>
+<blockquote>
+<p>排序的元素必须<strong>实现comparable</strong>接口。</p>
+<p>或者使用带比较器的sort</p>
+</blockquote>
+</li>
+<li><p>.sort(集合，比较器)【排序】带比较器</p>
+</li>
+<li><p>.copy(集合1，集合2)【把2元素移到1中，会替换】</p>
+</li>
+</ul>
+<h2 id="Stream-流式处理"><a href="#Stream-流式处理" class="headerlink" title="Stream 流式处理"></a>Stream 流式处理</h2><ul>
+<li>.filter(比较器)【过滤器】</li>
+<li>.skip(int)【跳过几个】</li>
+<li>.limit(int)【限制数量】</li>
+<li>.distinct()【去重复】</li>
+<li>.count()【计数】返回int</li>
+<li>.collect(Collectors.toList());【收集】返回List</li>
+<li>.forEach(拉姆达);【遍历】</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zfb.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/26/软件工程/" class="archive-article-date">
-  	<time datetime="2019-08-26T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/26/软件工程/">软件工程&amp;数据库范式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">collection</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/12/集合框架/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/25/JQuery/" class="archive-article-date">
-  	<time datetime="2019-08-25T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/08/13/IO/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          IO流
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/11/常用方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">常用方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/25/JQuery/">jQuery</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/20/JavaScript/" class="archive-article-date">
-  	<time datetime="2019-08-20T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/JavaScript/">JavaScript</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/19/反射/" class="archive-article-date">
-  	<time datetime="2019-08-19T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/19/反射/">反射</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/18/MYSQL/" class="archive-article-date">
-  	<time datetime="2019-08-18T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/18/MYSQL/">MYSQL入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/17/图形界面/" class="archive-article-date">
-  	<time datetime="2019-08-17T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/17/图形界面/">图形界面</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/16/JSON/" class="archive-article-date">
-  	<time datetime="2019-08-16T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/16/JSON/">JSON</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/15/网络/" class="archive-article-date">
-  	<time datetime="2019-08-15T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/15/网络/">网络</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JAVA网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/14/线程/" class="archive-article-date">
-  	<time datetime="2019-08-14T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/14/线程/">线程Thread</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/13/IO/" class="archive-article-date">
-  	<time datetime="2019-08-13T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/13/IO/">IO流</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JAVA.IO</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2019/08/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/08/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -568,8 +491,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

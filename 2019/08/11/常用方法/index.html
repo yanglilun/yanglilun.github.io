@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/8 | Yang_li&#39;s BLOG</title>
+  <title>常用方法 | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yang_li&#39;s BLOG">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="#常用方法 数组 .sort(数组) 【排序】  .binarySearch(数组，查找数) 【查找】   注意：在调用该方法之前，必须先调用sort()方法进行排序，如果数组没有排序， 那么结果是不确定的，此外如果数组中包含多个指定元素，则无法保证将找到哪个元素   System.arraycopy(数组1, 起始位置, 数组2, 起始位置, 拷贝长度);【拷贝数组】   Scanner -">
+<meta name="keywords" content="常用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用方法">
+<meta property="og:url" content="http://yoursite.com/2019/08/11/常用方法/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
+<meta property="og:description" content="#常用方法 数组 .sort(数组) 【排序】  .binarySearch(数组，查找数) 【查找】   注意：在调用该方法之前，必须先调用sort()方法进行排序，如果数组没有排序， 那么结果是不确定的，此外如果数组中包含多个指定元素，则无法保证将找到哪个元素   System.arraycopy(数组1, 起始位置, 数组2, 起始位置, 拷贝长度);【拷贝数组】   Scanner -">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-26T09:51:41.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yang_li&#39;s BLOG">
+<meta name="twitter:title" content="常用方法">
+<meta name="twitter:description" content="#常用方法 数组 .sort(数组) 【排序】  .binarySearch(数组，查找数) 【查找】   注意：在调用该方法之前，必须先调用sort()方法进行排序，如果数组没有排序， 那么结果是不确定的，此外如果数组中包含多个指定元素，则无法保证将找到哪个元素   System.arraycopy(数组1, 起始位置, 数组2, 起始位置, 拷贝长度);【拷贝数组】   Scanner -">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -146,405 +151,559 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-常用方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      常用方法
+    </h1>
+  
+
+        
+        <a href="/2019/08/11/常用方法/" class="archive-article-date">
+  	<time datetime="2019-08-11T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-11</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>#常用方法</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
+<li><p>.sort(数组) 【排序】</p>
+</li>
+<li><p>.binarySearch(数组，查找数) 【查找】</p>
+<blockquote>
+<p> 注意：在调用该方法之前，必须先调用sort()方法进行排序，如果数组没有排序， 那么结果是不确定的，此外如果数组中包含多个指定元素，则无法保证将找到哪个元素</p>
+</blockquote>
+</li>
+<li><p>System.arraycopy(数组1, 起始位置, 数组2, 起始位置, 拷贝长度);【拷贝数组】</p>
+</li>
+</ul>
+<h2 id="Scanner-扫描器"><a href="#Scanner-扫描器" class="headerlink" title="Scanner - 扫描器"></a>Scanner - 扫描器</h2><ul>
+<li>Scanner.next()【扫描控制台下一个数据（空格分开）】</li>
+<li>Scanner.delimiter()【显示当前正在使用的分隔符】</li>
+</ul>
+<h2 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String - 字符串"></a>String - 字符串</h2><p>是一个不可改变的字符串对象，存放在<strong>字符串常量池</strong></p>
+<ul>
+<li>String(数组)【把数组转成String】</li>
+<li>String(数组,起始位置，长度)【把数组转成String】</li>
+<li>.charAt(index)【获取字符串指定位置的字符】</li>
+<li>.compareTo(String)【比较字符串大小】</li>
+<li>.concat(String)【字符串拼接】</li>
+<li>.contains(String)【是否包含字符串】</li>
+<li>.split(关键字)【字符串截取】</li>
+<li>.toLowerCase()【转小写】</li>
+<li>.toUpperCase()【转大写】</li>
+<li>.endsWith(String)【是否xxx结尾】</li>
+<li>.startsWith(String)【是否xxx开头】</li>
+<li>.indexOf(String)【求所在下标】</li>
+<li>lastindexOf(String)【最后一次出现的下标】</li>
+<li>.Join(String, String[])【把String数组之间用分隔符分开并且拼接】</li>
+<li>.substring(起始位，结束位)【字符串截取】</li>
+<li>.substring(起始位)【字符串截取】从起始位截取到末尾</li>
+<li>.replace(String[],替换符)【如果存在String[]中的字符串则替换】</li>
+<li>str.replace(“ “, “”); 【去掉所有空格】</li>
+<li>.trim()【去除前后空格】</li>
+<li>.matches(正则表达式)；【对比正则表达式】</li>
+<li>.getbytes()【转成字符数组】返回byte[]</li>
+</ul>
+<h2 id="Integer-数据处理"><a href="#Integer-数据处理" class="headerlink" title="Integer - 数据处理"></a>Integer - 数据处理</h2><ul>
+<li>.ParseInt(String s)【将String转换成int】</li>
+<li>.parseInt(String s,int radix)【把字符串转成相应进制】</li>
+<li>.toString(int ,int 进制)【将int整数转成指定的进制数】</li>
+<li>.toHexString(int);【抓成16进制string】</li>
+</ul>
+<h2 id="Timer-时间控制"><a href="#Timer-时间控制" class="headerlink" title="Timer - 时间控制"></a>Timer - 时间控制</h2><ul>
+<li>.schedule(执行接口，首次延迟时间ms，周期时间ms);【延迟循环】</li>
+</ul>
+<h2 id="Date-util-日期类"><a href="#Date-util-日期类" class="headerlink" title="Date(util) - 日期类"></a>Date(util) - 日期类</h2><ul>
+<li>Date(long或String)【转成Date类型】</li>
+<li>.toString();【当前时间转成字符串】</li>
+<li>.toLocalTime();【转换成系统时间格式】</li>
+<li>.getTime()【返回1900至今毫秒数long】</li>
+<li>.getDate()【获取当前时间】</li>
+</ul>
+<p>##Date(sql) - 日期类</p>
+<ul>
+<li>new Date(long毫秒数);【日期 (可直接输出)】</li>
+</ul>
+<p>##Time(sql) - 时间类</p>
+<ul>
+<li>new Time(long毫秒数);【时间 (可直接输出)】</li>
+</ul>
+<h2 id="Object-基本对象"><a href="#Object-基本对象" class="headerlink" title="Object - 基本对象"></a>Object - 基本对象</h2><ul>
+<li>.inNull()【判断空】</li>
+<li>.noNull()</li>
+<li>.equals(object1,object2)【比较】</li>
+</ul>
+<h2 id="Math-数学类"><a href="#Math-数学类" class="headerlink" title="Math - 数学类"></a>Math - 数学类</h2><ul>
+<li>.abs()【绝对值】</li>
+<li>.round()【四舍五入】</li>
+<li>.ceil()【向上取整】</li>
+<li>.floor()【向下取整】</li>
+<li>.max()【比较大小，返回大的】</li>
+<li>.random()【生成0（包含）-1（不包含）之间的随机数】</li>
+</ul>
+<h2 id="Random-随机类"><a href="#Random-随机类" class="headerlink" title="Random - 随机类"></a>Random - 随机类</h2><ul>
+<li>.nextInt(整数a)【随即从0-a取一个】</li>
+</ul>
+<h2 id="BigDecimal-高精度类"><a href="#BigDecimal-高精度类" class="headerlink" title="BigDecimal - 高精度类"></a>BigDecimal - 高精度类</h2><p>int,char,String,float,double都可以转成这个</p>
+<ul>
+<li>.add()【加法】</li>
+<li>.subtract()【减法】</li>
+<li>.multiply()【乘法】</li>
+<li>.divide()【除法】</li>
+</ul>
+<h2 id="Number-数字类"><a href="#Number-数字类" class="headerlink" title="Number - 数字类"></a>Number - 数字类</h2><ul>
+<li>.doubleValue()【转成double】</li>
+<li>.intValue()【转成int】</li>
+</ul>
+<h2 id="NumberFormat-数字格式类"><a href="#NumberFormat-数字格式类" class="headerlink" title="NumberFormat - 数字格式类"></a>NumberFormat - 数字格式类</h2><ul>
+<li>.getCurrencyInstance();【获取本机环境的货币格式】</li>
+<li>.getCurrencyInstance(Locale.US);【转换成相应的货币格式】</li>
+<li>.format(数字)【返回String】【把数字改成相应格式的字符串】</li>
+<li>.parse(String)【返回Number】【字符串解析成相应格式的数字】</li>
+</ul>
+<h2 id="DecimalFormal-自定义格式"><a href="#DecimalFormal-自定义格式" class="headerlink" title="DecimalFormal - 自定义格式"></a>DecimalFormal - 自定义格式</h2><ul>
+<li>new DecimalFormal(“##.##%”);【格式化成保留两位的百分比】</li>
+<li>new DecimalFormal(“##.##”);【格式化成保留两位的小数】</li>
+<li>.format()【转成定义的格式】</li>
+</ul>
+<p>##SimpleDateFormat - 自定义日期格式</p>
+<ul>
+<li>SimpleDateFormat(“yyyy-MM-dd HH:mm:ss”)；【定义日期格式】</li>
+<li>.format(Date)【Date类型按格式转成String】</li>
+<li>.parse(String)【字符串解析成Date】</li>
+</ul>
+<h2 id="DateFormat-日期格式"><a href="#DateFormat-日期格式" class="headerlink" title="DateFormat - 日期格式"></a>DateFormat - 日期格式</h2><ul>
+<li>DateFormat.getInstance()【格式xx-xx-xx 上午/下午xx:xx】</li>
+<li>DateFormat.getDateTimeInstance()【格式xxxx-xx-xx xx:xx:xx】</li>
+</ul>
+<h2 id="Calendar-日历类"><a href="#Calendar-日历类" class="headerlink" title="Calendar - 日历类"></a>Calendar - 日历类</h2><ul>
+<li><p>Calendar c = Calendar.getInstance();【获取当前日历】</p>
+</li>
+<li><p>.get(index)；【获取日历的信息】</p>
+<blockquote>
+<p>index可以用常量<strong>Calendar.常量名</strong></p>
+</blockquote>
+</li>
+<li><p>.get(Calendar.MONTH)【获取月份（要手动加1）】</p>
+</li>
+<li><p>.set(index/常量,值)【设置某个字段的值】</p>
+</li>
+<li><p>.getTimeInMillis()【从1900至今的毫秒数】（返回long）</p>
+</li>
+<li><p>.getActualMaximum(常量)【字段最大值】</p>
+</li>
+</ul>
+<p>常用字段</p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>YEAR</td>
+<td>年份</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>月（缺一月）</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>日 – 从0开始</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>小时（12小时）</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>小时内的分钟</td>
+</tr>
+<tr>
+<td>SECEND</td>
+<td>分钟内的秒</td>
+</tr>
+<tr>
+<td>MILLISECEND</td>
+<td>秒中的毫秒</td>
+</tr>
+<tr>
+<td>DAY_OF_HOUR</td>
+<td>在天中的小时（24小时）</td>
+</tr>
+<tr>
+<td>DAY_OF_WEAK</td>
+<td>在星期中是第几天（星期）<br> 【星期7是第一天】</td>
+</tr>
+<tr>
+<td>DAY_OF_MONTH</td>
+<td>在月中是第几天（DATE）</td>
+</tr>
+</tbody></table>
+<h2 id="FIle-文件类"><a href="#FIle-文件类" class="headerlink" title="FIle - 文件类"></a>FIle - 文件类</h2><ul>
+<li><p>.compareTo(File)【比较路径顺序（开头）】</p>
+<blockquote>
+<p>如果路径相等，则为零</p>
+<p>如果路径名在字典上小于参数，则小于零的值</p>
+<p>如果路径名在字典上大于参数，则该值大于零</p>
+</blockquote>
+</li>
+<li><p>.createNewFile()【根据目录 创建当前文件对象】</p>
+<blockquote>
+<p>如果父目录不存在则IO异常</p>
+</blockquote>
+</li>
+<li><p>.mkdir()【创建目录（上一级目录）】</p>
+</li>
+<li><p>.mkdirs()【创建所有目录】</p>
+</li>
+<li><p>.creatTempFile(文件名,后缀,FILE对象)【创建临时文件】</p>
+</li>
+<li><p>.delete()【删除文件】</p>
+</li>
+<li><p>.deleteOnExit()【程序结束时删除文件】</p>
+</li>
+<li><p>.getAbsolutePath()【获取绝对路径】</p>
+</li>
+<li><p>.getName()【获取文件名】</p>
+</li>
+<li><p>.lastModified()【最后一次修改时间】</p>
+</li>
+<li><p>.getTotalSpace()【获取所在磁盘空间】</p>
+</li>
+<li><p>.isHidden()【判断文件是否隐藏】</p>
+</li>
+<li><p>.isFile()【是否为文件】</p>
+</li>
+<li><p>.length()【文件长度（Byte）】</p>
+</li>
+<li><p>.getParent()【获取父路径字符串】</p>
+</li>
+<li><p>目录.list()【返回String数组】【所在目录的文件列表】</p>
+</li>
+<li><p>.renameTo(File)【移动文件到另一个路径和文件名】</p>
+</li>
+<li><p>.renameTo( new File( (.getParent) , “newname”) );【改名】</p>
+</li>
+<li><p>File.listRoots()【显示本机磁盘（可以直接输出）】</p>
+</li>
+<li><p>目录.listFiles()【返回文件数组】【返回所在目录所有的文件】</p>
+</li>
+<li><p>.listFiles(FileFilter)【过滤文件名】</p>
+</li>
+</ul>
+<p>FileFilter接口需要内部类或者匿名类来返回true或false</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">File f = <span class="keyword">new</span> File(<span class="string">"d:\\"</span>);</span><br><span class="line">		File[] temp = f.listFiles( <span class="keyword">new</span> FileFilter() &#123;</span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">accept</span><span class="params">(File pathname)</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> pathname.getName().toLowerCase().endsWith(<span class="string">".exe"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>也可以用拉姆达表达式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">File f = <span class="keyword">new</span> File(<span class="string">"d:\\"</span>);</span><br><span class="line">		File[] temp = f.listFiles((aaa)-&gt;&#123;<span class="keyword">return</span> aaa.getName().toLowerCase().endsWith(<span class="string">".exe"</span>);&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>##Runtime - 系统进程类</p>
+<ul>
+<li>Runtime r = Runtime.getRuntime();</li>
+<li>.exec(“run运行命令”); </li>
+<li>.totalMemory()【总内存】</li>
+<li>.maxMemory()【最大内存】</li>
+<li>.freeMemory()【闲置内存】</li>
+</ul>
+<p>##正则表达式</p>
+<ul>
+<li>所有字符 <code>.</code></li>
+<li>是否是 <code>[abc]</code></li>
+<li>是否不是 <code>[^abc]</code></li>
+<li>是否是其中一个 <code>[a-z]</code></li>
+<li>是否 i 个 <code>[0-9]{i}</code></li>
+<li>至少 i 个 <code>[0-9]{i,}</code></li>
+<li>长度在 i ~ j 之间 <code>[0-9]{i,j}</code></li>
+<li>任意位 <code>[0-9]*</code></li>
+<li>一个以上 <code>\d+</code></li>
+<li>一个以上 <code>\w+</code></li>
+<li>匹配字符串 <code>(xxx)</code></li>
+<li>字符串二选一 <code>(xxx)|(zzz)</code></li>
+</ul>
+<h2 id="预定义字符类"><a href="#预定义字符类" class="headerlink" title="预定义字符类"></a>预定义字符类</h2><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d</td>
+<td>[0-9]</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>[^0-9]</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>[ \t\n\x0B\f\r]空白字符</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>[^\s]非空白字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>[a-zA-Z0-9_]</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>[^\w]非单词字符</td>
+</tr>
+</tbody></table>
+<h3 id="Pattern（编译器）"><a href="#Pattern（编译器）" class="headerlink" title="Pattern（编译器）"></a>Pattern（编译器）</h3><ul>
+<li>.compile(正则字符串)【设置正则表达式】</li>
+</ul>
+<h3 id="Matcher（匹配器）"><a href="#Matcher（匹配器）" class="headerlink" title="Matcher（匹配器）"></a>Matcher（匹配器）</h3><ul>
+<li>Mather m = 编译器.matcher(内容)  【定义匹配器m】</li>
+<li>.find()【匹配下一个】（若<strong>还有匹配项</strong>为true，<strong>没有匹配项</strong>则为false）</li>
+<li>.group()【返回find结果】</li>
+</ul>
+<hr>
+<h1 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h1><p>##获取桌面路径(desktopPath)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">File desktopDir = FileSystemView.getFileSystemView().getHomeDirectory();</span><br><span class="line">String desktopPath = desktopDir.getAbsolutePath();</span><br></pre></td></tr></table></figure>
+
+<h2 id="执行CMD命令"><a href="#执行CMD命令" class="headerlink" title="执行CMD命令"></a>执行CMD命令</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Runtime.getRuntime().exec(<span class="string">"cmd命令"</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="运行jar项目文件报错"><a href="#运行jar项目文件报错" class="headerlink" title="运行jar项目文件报错"></a>运行jar项目文件报错</h2><p><a href="https://blog.csdn.net/weixin_43600504/article/details/96993611" target="_blank" rel="noopener">没有主清单属性？</a> ←点击我</p>
+<p>##常用正则表达式</p>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^[\u4e00-\u9fa5]{0,}$</td>
+<td>汉字</td>
+</tr>
+<tr>
+<td>^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$</td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?</td>
+<td>域名</td>
+</tr>
+<tr>
+<td>^\d{4}-\d{1,2}-\d{1,2}</td>
+<td>日期格式</td>
+</tr>
+<tr>
+<td>\d{3}-\d{8}|\d{4}-\d{7}</td>
+<td>固定电话</td>
+</tr>
+<tr>
+<td>^\d{15}|\d{18}$</td>
+<td>身份证</td>
+</tr>
+<tr>
+<td>^([0-9]){7,18}(x|X)?</td>
+<td>短身份证</td>
+</tr>
+<tr>
+<td>^(?=.<em>\d)(?=.</em>[a-z])(?=.*[A-Z]).{8,10}$</td>
+<td>强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：</td>
+</tr>
+<tr>
+<td>\n\s*\r</td>
+<td>空白行</td>
+</tr>
+<tr>
+<td>[1-9]\d{5}(?!\d)</td>
+<td>中国邮政编码</td>
+</tr>
+<tr>
+<td>\d+.\d+.\d+.\d+</td>
+<td>IP地址(提取)</td>
+</tr>
+<tr>
+<td>((?:(?:25[0-5]|2[0-4]\d|[01]?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d?\d))</td>
+<td>IP地址</td>
+</tr>
+<tr>
+<td>(A).*?(B)</td>
+<td>在A和B之间的字符串</td>
+</tr>
+<tr>
+<td>(?&lt;=A).*?(?=B)</td>
+<td>在A和B之间的字符串（不包含AB）</td>
+</tr>
+</tbody></table>
+<p><a href="https://www.cnblogs.com/hjchoset/p/6032866.html" target="_blank" rel="noopener">JAVA常用正则表达式</a></p>
+<h2 id="汉语转拼音"><a href="#汉语转拼音" class="headerlink" title="汉语转拼音"></a>汉语转拼音</h2><ul>
+<li>PinyinHelper.toHanyuPinyinStringArray(汉字)【返回这个汉字所有的拼音读法】(返回String数组)</li>
+</ul>
+<h2 id="获取当前路径"><a href="#获取当前路径" class="headerlink" title="获取当前路径"></a>获取当前路径</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String path = System.getProperty(<span class="string">"user.dir"</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建不存在的目录"><a href="#创建不存在的目录" class="headerlink" title="创建不存在的目录"></a>创建不存在的目录</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//根据不存在的目录创建文件</span></span><br><span class="line">File f = <span class="keyword">new</span> File(<span class="string">"d:\\java\\aaa\\haha.txt"</span>);</span><br><span class="line"><span class="comment">//根据f的父路径创建目录</span></span><br><span class="line"><span class="keyword">new</span> File(f.getParent()).mkdir();</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zfb.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/26/软件工程/" class="archive-article-date">
-  	<time datetime="2019-08-26T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/26/软件工程/">软件工程&amp;数据库范式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">常用</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/11/常用方法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/25/JQuery/" class="archive-article-date">
-  	<time datetime="2019-08-25T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/08/12/集合框架/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          集合框架
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/10/课堂笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JAVA学习日志</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/25/JQuery/">jQuery</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/20/JavaScript/" class="archive-article-date">
-  	<time datetime="2019-08-20T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/JavaScript/">JavaScript</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/19/反射/" class="archive-article-date">
-  	<time datetime="2019-08-19T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/19/反射/">反射</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/18/MYSQL/" class="archive-article-date">
-  	<time datetime="2019-08-18T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/18/MYSQL/">MYSQL入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/17/图形界面/" class="archive-article-date">
-  	<time datetime="2019-08-17T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/17/图形界面/">图形界面</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/16/JSON/" class="archive-article-date">
-  	<time datetime="2019-08-16T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/16/JSON/">JSON</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/15/网络/" class="archive-article-date">
-  	<time datetime="2019-08-15T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/15/网络/">网络</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JAVA网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/14/线程/" class="archive-article-date">
-  	<time datetime="2019-08-14T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/14/线程/">线程Thread</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/13/IO/" class="archive-article-date">
-  	<time datetime="2019-08-13T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/13/IO/">IO流</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JAVA.IO</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2019/08/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/08/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -568,8 +727,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
