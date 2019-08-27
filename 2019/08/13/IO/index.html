@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>IO流 | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC]  IO流字节流 - （初级）InputStream - 字节输入流 System.in()【从控制台获取输入流】  .available()【可读字节数】返回int  .close()【关闭流】  .read(字节)【读取下一个字节】（返回字节的值int）  .read(字节数组)【读取字节数组，存到该字节数组中】（返回字节个数int）如果没有文字内容了会返回-1   数据流会存到该字">
+  <meta name="description" content="IO流java的io是实现输入和输出的基础，可以方便的实现数据的输入和输出操作。在java中把不同的输入/输出源（键盘，文件，网络连接等）抽象表述为“流”(stream)。通过流的形式允许java程序使用相同的方式来访问不同的输入/输出源。stram是从起源（source）到接收的（sink）的有序数据。">
 <meta name="keywords" content="JAVA.IO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IO流">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/IO/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
-<meta property="og:description" content="[TOC]  IO流字节流 - （初级）InputStream - 字节输入流 System.in()【从控制台获取输入流】  .available()【可读字节数】返回int  .close()【关闭流】  .read(字节)【读取下一个字节】（返回字节的值int）  .read(字节数组)【读取字节数组，存到该字节数组中】（返回字节个数int）如果没有文字内容了会返回-1   数据流会存到该字">
+<meta property="og:description" content="IO流java的io是实现输入和输出的基础，可以方便的实现数据的输入和输出操作。在java中把不同的输入/输出源（键盘，文件，网络连接等）抽象表述为“流”(stream)。通过流的形式允许java程序使用相同的方式来访问不同的输入/输出源。stram是从起源（source）到接收的（sink）的有序数据。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-26T09:52:04.463Z">
+<meta property="og:updated_time" content="2019-08-27T00:53:55.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IO流">
-<meta name="twitter:description" content="[TOC]  IO流字节流 - （初级）InputStream - 字节输入流 System.in()【从控制台获取输入流】  .available()【可读字节数】返回int  .close()【关闭流】  .read(字节)【读取下一个字节】（返回字节的值int）  .read(字节数组)【读取字节数组，存到该字节数组中】（返回字节个数int）如果没有文字内容了会返回-1   数据流会存到该字">
+<meta name="twitter:description" content="IO流java的io是实现输入和输出的基础，可以方便的实现数据的输入和输出操作。在java中把不同的输入/输出源（键盘，文件，网络连接等）抽象表述为“流”(stream)。通过流的形式允许java程序使用相同的方式来访问不同的输入/输出源。stram是从起源（source）到接收的（sink）的有序数据。">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -171,9 +171,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<hr>
-<h1 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h1><h2 id="字节流-（初级）"><a href="#字节流-（初级）" class="headerlink" title="字节流 - （初级）"></a>字节流 - （初级）</h2><h3 id="InputStream-字节输入流"><a href="#InputStream-字节输入流" class="headerlink" title="InputStream - 字节输入流"></a>InputStream - 字节输入流</h3><ul>
+        <h1 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h1><p>java的io是实现输入和输出的基础，可以方便的实现数据的输入和输出操作。在java中把不同的输入/输出源（键盘，文件，网络连接等）抽象表述为“流”(stream)。通过流的形式允许java程序使用相同的方式来访问不同的输入/输出源。stram是从起源（source）到接收的（sink）的有序数据。</p>
+<a id="more"></a>
+
+<h2 id="字节流-（初级）"><a href="#字节流-（初级）" class="headerlink" title="字节流 - （初级）"></a>字节流 - （初级）</h2><h3 id="InputStream-字节输入流"><a href="#InputStream-字节输入流" class="headerlink" title="InputStream - 字节输入流"></a>InputStream - 字节输入流</h3><ul>
 <li><p>System.in()【从控制台获取输入流】</p>
 </li>
 <li><p>.available()【可读字节数】返回int</p>
@@ -497,6 +498,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IO流"><span class="toc-number">1.</span> <span class="toc-text">IO流</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#字节流-（初级）"><span class="toc-number">1.1.</span> <span class="toc-text">字节流 - （初级）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#InputStream-字节输入流"><span class="toc-number">1.1.1.</span> <span class="toc-text">InputStream - 字节输入流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OutputStream-字节输出流"><span class="toc-number">1.1.2.</span> <span class="toc-text">OutputStream - 字节输出流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FileInputStream（文件输入流）"><span class="toc-number">1.1.3.</span> <span class="toc-text">FileInputStream（文件输入流）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FileOutputStream（文件输出流）"><span class="toc-number">1.1.4.</span> <span class="toc-text">FileOutputStream（文件输出流）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符流-（初级）"><span class="toc-number">1.2.</span> <span class="toc-text">字符流 - （初级）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Reader-字符输入流"><span class="toc-number">1.2.1.</span> <span class="toc-text">Reader - 字符输入流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Writer-字符输出流"><span class="toc-number">1.2.2.</span> <span class="toc-text">Writer - 字符输出流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转换流-（中级）桥梁"><span class="toc-number">1.3.</span> <span class="toc-text">转换流 - （中级）桥梁</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#输入转换流"><span class="toc-number">1.3.1.</span> <span class="toc-text">输入转换流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输出转换流"><span class="toc-number">1.3.2.</span> <span class="toc-text">输出转换流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缓冲流-（高级）"><span class="toc-number">1.4.</span> <span class="toc-text">缓冲流 - （高级）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BufferedReader"><span class="toc-number">1.4.1.</span> <span class="toc-text">BufferedReader</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BufferedWriter"><span class="toc-number">1.4.2.</span> <span class="toc-text">BufferedWriter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BufferedInputStream"><span class="toc-number">1.4.3.</span> <span class="toc-text">BufferedInputStream</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BufferedOutputStream"><span class="toc-number">1.4.4.</span> <span class="toc-text">BufferedOutputStream</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#打印流-（方便）"><span class="toc-number">1.5.</span> <span class="toc-text">打印流 - （方便）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RandomAccessFile-随机访问"><span class="toc-number">1.6.</span> <span class="toc-text">RandomAccessFile - 随机访问</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#对象序列化"><span class="toc-number">2.</span> <span class="toc-text">对象序列化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ObjectInput-Output-Stream-对象输入-出流"><span class="toc-number">2.1.</span> <span class="toc-text">ObjectInput(Output)Stream 对象输入/出流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Serializable-接口，可序列化"><span class="toc-number">2.2.</span> <span class="toc-text">Serializable 接口，可序列化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Externalizable-自定义序列化接口"><span class="toc-number">2.3.</span> <span class="toc-text">Externalizable 自定义序列化接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transient-关键字"><span class="toc-number">2.4.</span> <span class="toc-text">transient 关键字</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -611,6 +625,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JS</a>
               </li>
              
@@ -624,10 +642,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">JAVA网络</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
