@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>线程Thread | Yang_li&#39;s BLOG</title>
+  <title>jQuery | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java的多线程！thread类和runnable接口！~">
-<meta name="keywords" content="JAVA">
+  <meta name="description" content="jQueryjQuery就是JavaScript的一个工具库 直接script src=’地址’ 即可">
+<meta name="keywords" content="jQuery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线程Thread">
-<meta property="og:url" content="http://yoursite.com/2019/08/14/线程/index.html">
+<meta property="og:title" content="jQuery">
+<meta property="og:url" content="http://yoursite.com/2019/08/28/JQuery/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
-<meta property="og:description" content="Java的多线程！thread类和runnable接口！~">
+<meta property="og:description" content="jQueryjQuery就是JavaScript的一个工具库 直接script src=’地址’ 即可">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-27T00:59:24.868Z">
+<meta property="og:updated_time" content="2019-09-01T07:51:09.189Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线程Thread">
-<meta name="twitter:description" content="Java的多线程！thread类和runnable接口！~">
+<meta name="twitter:title" content="jQuery">
+<meta name="twitter:description" content="jQueryjQuery就是JavaScript的一个工具库 直接script src=’地址’ 即可">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -151,97 +151,166 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-线程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JQuery" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      线程Thread
+      jQuery
     </h1>
   
 
         
-        <a href="/2019/08/14/线程/" class="archive-article-date">
-  	<time datetime="2019-08-14T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
+        <a href="/2019/08/28/JQuery/" class="archive-article-date">
+  	<time datetime="2019-08-28T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Java的多线程！<br>thread类和runnable接口！~</p>
+        <h1 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h1><p>jQuery就是JavaScript的一个工具库</p>
+<p>直接script src=’地址’ 即可</p>
 <a id="more"></a>
+
+<h2 id="windows-onload"><a href="#windows-onload" class="headerlink" title="windows.onload"></a>windows.onload</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
+<li>$(‘标签名’) 【标签选择器】</li>
+<li>$(‘#id名’)【Id选择器】</li>
+<li>$(‘.类名’)【类选择器】</li>
+<li>$(‘*’)【所有元素】</li>
+<li>$(父类 子类)【父类下所有子类】</li>
+<li>$(‘元素1，元素2’)【组合选择器】</li>
+<li>.next(‘选择器’)【之后的元素】</li>
+<li>.siblings(‘元素’)【选择同辈的元素】</li>
+</ul>
+<h2 id="尾类"><a href="#尾类" class="headerlink" title="尾类"></a>尾类</h2><ul>
+<li>:even 【偶数选择】</li>
+<li>:odd【奇数选择】</li>
+<li>:eq(索引)【指定索引元素】</li>
+<li>:gt(索引)【大于索引元素】</li>
+<li>:lt(索引)【小于索引元素】</li>
+<li>:checked【选中的元素】</li>
+<li>:animated【正在执行动画的元素】</li>
+<li>等等</li>
+</ul>
+<h2 id="常用方法（支持链式编程）"><a href="#常用方法（支持链式编程）" class="headerlink" title="常用方法（支持链式编程）"></a>常用方法（支持链式编程）</h2><ul>
+<li><p>on(‘状态’,function)【addEventListener监听】</p>
+</li>
+<li><p>css(‘键’,’值’)【设置css样式】</p>
+</li>
+<li><p>css({ ‘ 键 ‘ : ‘值 ‘ , ‘ 键 ‘ : ‘ 值 ‘ })【设置css样式】</p>
+</li>
+<li><p>animate({过程},毫秒数)【执行动画】</p>
+</li>
+<li><p>text()【innerText】</p>
+</li>
+<li><p>html()【innerHTML】</p>
+</li>
+<li><p>val()【value】</p>
+</li>
+<li><p>prop(标签属性，值)【设置存在属性的值】</p>
+</li>
+<li><p>attr(属性，值)【设置属性的值】</p>
+</li>
+<li><p>removeprop()【移除属性】</p>
+</li>
+<li><p>removeattr()【移除属性】</p>
+</li>
+<li><p>toggle()【隐藏/显示】</p>
+</li>
+<li><p>slideToggle(毫秒数)【滑动开关】</p>
+</li>
+<li><p>append(对象)【追加】</p>
+</li>
+<li><p>empty()【清空所有元素】</p>
+</li>
+<li><p>remove(对象)【移除】</p>
+<blockquote>
+<p>为了防止动画bug，最好加上尾类</p>
+<p>:not(:animted) 【不是动画中的元素】才可以展开关闭</p>
+<p>或者加上.stop()【停止动画】用来停止上一次的动画</p>
+</blockquote>
+</li>
+<li><p>addClass()【添加样式】</p>
+</li>
+<li><p>removeClass()【移除样式】</p>
+</li>
+<li><p>toggleClass()【样式开关】</p>
+</li>
+<li><p>hide()【隐藏标签】</p>
+</li>
+<li><p>show()【显示标签】</p>
+</li>
+<li><p>each(i,e)【遍历】(i为下标)(e为每一次的对象)</p>
+</li>
+<li><p>trigger(事件情况)【触发对象的某个事件】</p>
+</li>
+</ul>
+<h2 id="jQuery创建元素对象"><a href="#jQuery创建元素对象" class="headerlink" title="jQuery创建元素对象"></a>jQuery创建元素对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> p = $(<span class="string">'&lt;p&gt;'</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="jQery对象转原生对象"><a href="#jQery对象转原生对象" class="headerlink" title="jQery对象转原生对象"></a>jQery对象转原生对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//取第0个元素即可成为原生对象</span></span><br><span class="line"><span class="keyword">var</span> demo = $(<span class="string">'#demo'</span>)[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="原生对象转jquery对象"><a href="#原生对象转jquery对象" class="headerlink" title="原生对象转jquery对象"></a>原生对象转jquery对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> input = $(<span class="built_in">document</span>.createElement(<span class="string">'input'</span>));</span><br></pre></td></tr></table></figure>
+
+<h2 id="JQuery事件委托"><a href="#JQuery事件委托" class="headerlink" title="JQuery事件委托"></a>JQuery事件委托</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'父元素'</span>).on(<span class="string">'click'</span>,<span class="string">'子元素'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// $(this)就可以获取到每一个子元素啦</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>相比于下面给每一个子元素添加一个事件，更加节省内存</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'子元素'</span>).on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// $(this)也能获取到子元素</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h1 id="线程-Thread"><a href="#线程-Thread" class="headerlink" title="线程 (Thread)"></a>线程 (Thread)</h1><h2 id="进程-（静态）"><a href="#进程-（静态）" class="headerlink" title="进程 （静态）"></a>进程 （静态）</h2><p>​    每一个应用程序都是一个正在执行的任务，进程是计算机中应用程序的基本单元</p>
-<h2 id="线程-（动态）"><a href="#线程-（动态）" class="headerlink" title="线程 （动态）"></a>线程 （动态）</h2><p>一个进程包含多个子任务、每一个子任务对应一个线程</p>
-<h2 id="线程的创建与启动"><a href="#线程的创建与启动" class="headerlink" title="线程的创建与启动"></a>线程的创建与启动</h2><p><strong>四种方式：</strong></p>
+<h1 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h1><h3 id="AJAX使用步骤"><a href="#AJAX使用步骤" class="headerlink" title="AJAX使用步骤:"></a>AJAX使用步骤:</h3><ol>
+<li>创建一个XMLHttpRequest对象</li>
+<li>打开连接(请求后他)</li>
+<li>发送请求</li>
+<li>当请求状态发生改变时触发回调函数</li>
+<li>判断请求状态(readyState：4)</li>
+<li>判断响应状态(status：200)</li>
+<li>获取服务端数据(responseText)</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建XMLHttpRequest</span></span><br><span class="line"><span class="keyword">var</span> xhr=<span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"><span class="comment">// 打开链接</span></span><br><span class="line">xhr.open(<span class="string">'GET'</span>,<span class="string">'demo.txt'</span>,<span class="literal">true</span>);</span><br><span class="line"><span class="comment">// 准备完成时</span></span><br><span class="line">xhr.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 判断请求</span></span><br><span class="line">    <span class="keyword">if</span>(xhr.readyState==<span class="number">4</span> &amp;&amp; xhr.status==<span class="number">200</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> data=xhr.responseText;</span><br><span class="line">        <span class="built_in">console</span>.log(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 发送请求</span></span><br><span class="line">xhr.send();</span><br></pre></td></tr></table></figure>
+
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h3 id="最大兼容创建对象"><a href="#最大兼容创建对象" class="headerlink" title="最大兼容创建对象"></a>最大兼容创建对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xhr;</span><br><span class="line"><span class="keyword">if</span>(XMLHttpRequest)&#123;</span><br><span class="line">    xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    xhr = <span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="如果是post请求"><a href="#如果是post请求" class="headerlink" title="如果是post请求"></a>如果是post请求</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xhr.setRequestHeader(<span class="string">'Content-Type'</span>,<span class="string">'application/x-www-form-urlencoded'</span>)</span><br><span class="line">xhr.send(data);<span class="comment">//data表示需要提交的数据</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="设置当请求状态发生改变时触发回调函数"><a href="#设置当请求状态发生改变时触发回调函数" class="headerlink" title="设置当请求状态发生改变时触发回调函数"></a>设置当请求状态发生改变时触发回调函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">xhr.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(xhr.readyState == <span class="number">4</span> &amp;&amp; xhr.status == <span class="number">200</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> data = xhr.responseText;</span><br><span class="line">        <span class="comment">//通过回调机制将数据传递到外部</span></span><br><span class="line">        callback(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="封装好的AJAX"><a href="#封装好的AJAX" class="headerlink" title="封装好的AJAX"></a>封装好的AJAX</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params">method,url,data,callback</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> xhr = <span class="literal">null</span>;</span><br><span class="line">    <span class="comment">//创建XMLHttpRequest对象（考虑浏览器兼容性）</span></span><br><span class="line">    <span class="keyword">if</span>(XMLHttpRequest)&#123;</span><br><span class="line">        xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        xhr = <span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>);<span class="comment">//IE5,IE6</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//打开连接</span></span><br><span class="line">    xhr.open(method,url);</span><br><span class="line">    <span class="comment">//判断method是否post</span></span><br><span class="line">    <span class="keyword">if</span>(method.toLowerCase() === <span class="string">'post'</span>)&#123;</span><br><span class="line">        <span class="comment">//对于post请求需要设置请求头</span></span><br><span class="line">        xhr.setRequestHeader(<span class="string">'Content-Type'</span>,<span class="string">'application/x-www-form-urlencoded'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    xhr.send(data);</span><br><span class="line">    <span class="comment">//设置当请求状态发生改变时触发回调函数</span></span><br><span class="line">    xhr.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(xhr.readyState == <span class="number">4</span> &amp;&amp; xhr.status == <span class="number">200</span>)&#123;</span><br><span class="line">            <span class="keyword">var</span> data = xhr.responseText;</span><br><span class="line">            <span class="comment">//通过回调机制将数据传递到外部</span></span><br><span class="line">            callback(data);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="JQuery自带的AJAX"><a href="#JQuery自带的AJAX" class="headerlink" title="JQuery自带的AJAX"></a>JQuery自带的AJAX</h1><ul>
+<li><h4 id="标准ajax"><a href="#标准ajax" class="headerlink" title="标准ajax"></a>标准ajax</h4></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    url:<span class="string">'地址'</span>,</span><br><span class="line">    type:<span class="string">'get/post'</span>,</span><br><span class="line">    success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//data就是获取的数据</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>可以直接用.html(“html组件”)添加到页面中</strong></p>
+<h3 id="也可以使用load方法"><a href="#也可以使用load方法" class="headerlink" title="也可以使用load方法"></a>也可以使用load方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元素对象.load(<span class="string">'页面组件URL'</span>)</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>实现Runnable接口（需要新的Thread中转）</li>
-<li>继承Thread类（局限性高，但是可以直接start）</li>
-<li>实现Callable接口，创建FutureTask</li>
-<li></li>
+<li><h4 id="get"><a href="#get" class="headerlink" title="get"></a>get</h4></li>
 </ul>
-<p>###Runnable函数接口</p>
-<p>需要实现run方法（不能直接调用）</p>
-<p>调用线程run方法需要用线程类（Thread）调用.rstart方法</p>
-<p>###Runnable - 可线程类</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="keyword">get</span>('请求URL',function(data)&#123;</span><br><span class="line">    <span class="comment">//data就是请求后传回的文本数据</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>.run()【执行该线程】</li>
-<li>.sleep(毫秒数)【休眠】</li>
-<li>.activeCount()【返回当前活跃线程数（主线程也算）】</li>
-<li>.getName()【获取当前线程的名称】</li>
-<li>.getPriority()【显示当前线程的优先级】</li>
-<li>.setPriority()【设置线程的优先级，<strong>优先级高的先执行</strong>】</li>
-<li>.getState()【获取当前线程的优先级】</li>
-<li>.interrupt()【<strong>标记</strong>线程中断】</li>
-<li>.isinterrupt()【判断中断标记】</li>
-<li>Thread.currentThread().getName()【获取本实现类的进程的名字】</li>
+<li><h4 id="getJSON"><a href="#getJSON" class="headerlink" title="getJSON"></a>getJSON</h4></li>
 </ul>
-<h3 id="Thread-线程对象"><a href="#Thread-线程对象" class="headerlink" title="Thread 线程对象"></a>Thread 线程对象</h3><ul>
-<li><strong>Thread(Runnable实现类)【基于实现类的run方法定义一个新的线程对象】</strong></li>
-<li>.start(对象)【多线程执行某个对象的run方法】</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//基于runnable实现类定义线程</span></span><br><span class="line">实现runnable类 对象名 = <span class="keyword">new</span> 实现runnable类();</span><br><span class="line">Thread t = <span class="keyword">new</span> Thread(对象名);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.getJSON(<span class="string">'请求URL'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//data就是请求后传回的json对象</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>##线程终止方式</p>
 <ul>
-<li>标记中断，return 【线程内部停止】</li>
-<li>异常中断，根据.interrupt()【<strong>标记</strong>线程中断，外部控制中断】</li>
-<li>直接中断.stop()【不推荐，线程锁丢了，可能导致不安全】</li>
+<li><h4 id="serialize-将表单数据序列化"><a href="#serialize-将表单数据序列化" class="headerlink" title="serialize()将表单数据序列化"></a>serialize()将表单数据序列化</h4></li>
 </ul>
-<h2 id="后台线程-（守护线程）"><a href="#后台线程-（守护线程）" class="headerlink" title="后台线程 - （守护线程）"></a>后台线程 - （守护线程）</h2><p>在线程内创建线程，并执行该线程的<strong>.setDaemon(true);</strong>方法，即可设置成守护线程,自己关闭，守护线程也关闭</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实现runnable类 对象名 = <span class="keyword">new</span> 实现runnable类();</span><br><span class="line">Thread t = <span class="keyword">new</span> Thread(对象名);</span><br><span class="line">t.setDaemon(<span class="keyword">true</span>);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
-
-<h1 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h1><h2 id="synchronized（对象锁）互斥锁"><a href="#synchronized（对象锁）互斥锁" class="headerlink" title="synchronized（对象锁）互斥锁"></a>synchronized（对象锁）互斥锁</h2><h2 id="用法1"><a href="#用法1" class="headerlink" title="用法1"></a>用法1</h2><p>​    直接在线程内方法中加上synchronized修饰</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">getMoney</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br></pre></td></tr></table></figure>
-
-<p>​    就可以在<strong>多线程调用一个线程对象</strong>的方法时，最多<strong>同时只能有一个线程</strong>获取该对象的方法。</p>
-<h2 id="用法2"><a href="#用法2" class="headerlink" title="用法2"></a>用法2</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//线程方法内使用synchronized获取，并锁住某个对象</span></span><br><span class="line"><span class="keyword">synchronized</span> (对象)&#123;</span><br><span class="line">	<span class="comment">//锁住对象之后执行的过程</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h1><ul>
-<li>多个线程都在等待对方释放所占有的资源，死锁经典问题：<strong>哲学家吃饭</strong></li>
-<li><strong>每个线程都在等待对方释放自己需要的资源，形成死锁</strong></li>
+<h1 id="post表单"><a href="#post表单" class="headerlink" title="post表单"></a>post表单</h1><ul>
+<li>.serialize();【获取表单的数据】</li>
 </ul>
-<h1 id="wait-amp-notify"><a href="#wait-amp-notify" class="headerlink" title="wait&amp;notify"></a>wait&amp;notify</h1><p>​    <strong>wait和notify一般成对存在</strong></p>
-<ul>
-<li>对象.wait()【使用了该对象的进程<strong>进入等待状态</strong>】</li>
-<li>对象.notify()【<strong>当前</strong>使用该对象的进程<strong>退出等待</strong>】</li>
-<li>对象.notifyall()【<strong>所有</strong>使用了该对象的进程<strong>退出等待</strong>】</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取obj资源</span></span><br><span class="line"><span class="keyword">synchronized</span> (obj) &#123;</span><br><span class="line">    <span class="comment">//使用资源的过程</span></span><br><span class="line">    obj.wait();<span class="comment">//资源进入等待状态,以供别人使用,或者等待释放。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后再利用$.post()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.post(<span class="string">'传递到的URL'</span>,获取的数据,执行的事件)</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取obj资源</span></span><br><span class="line"><span class="keyword">synchronized</span> (obj) &#123;</span><br><span class="line">    <span class="comment">//释放obj的所有wait</span></span><br><span class="line">    obj.notifyAll();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>##wait和sleep区别？</p>
-<ul>
-<li>sleep()需要毫秒数为参数，执行后，线程会进入休眠状态（让出cpu时间片），时间到达后，线程会自动唤醒。</li>
-<li>wait()不需要参数，会让使用该对象的线程进入休眠，<strong>唤醒需要使用notify或notifyall</strong>来让<strong>休眠的进程</strong>退出等待（继续wait()后面执行）</li>
-</ul>
-<h2 id="生产者消费者问题"><a href="#生产者消费者问题" class="headerlink" title="生产者消费者问题"></a>生产者消费者问题</h2><p>生产者 producer</p>
-<p>消费者customer</p>
-
+<h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h1><p>JSON.parse(json字符串)【可以得到json对象】</p>
+<h2 id="下拉动画"><a href="#下拉动画" class="headerlink" title="下拉动画"></a>下拉动画</h2><p>点击第一个li时，把第二个以后的li执行.slideToggle()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(对象).hover(进入时<span class="function"><span class="keyword">function</span>，退出时<span class="title">function</span>)</span></span><br></pre></td></tr></table></figure>
       
 
       
@@ -280,7 +349,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
         		</li>
       		
 		</ul>
@@ -336,7 +405,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/14/线程/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/28/JQuery/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -350,18 +419,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/15/网络/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/08/29/Tomcat&Servlet/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          网络
+          Tomcat&amp;Servlet
         
       </div>
     </a>
   
   
-    <a href="/2019/08/13/IO/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IO流</div>
+    <a href="/2019/08/27/JavaScript/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -388,7 +457,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#线程-Thread"><span class="toc-number">1.</span> <span class="toc-text">线程 (Thread)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#进程-（静态）"><span class="toc-number">1.1.</span> <span class="toc-text">进程 （静态）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线程-（动态）"><span class="toc-number">1.2.</span> <span class="toc-text">线程 （动态）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线程的创建与启动"><span class="toc-number">1.3.</span> <span class="toc-text">线程的创建与启动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Thread-线程对象"><span class="toc-number">1.3.1.</span> <span class="toc-text">Thread 线程对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后台线程-（守护线程）"><span class="toc-number">1.4.</span> <span class="toc-text">后台线程 - （守护线程）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#线程同步"><span class="toc-number">2.</span> <span class="toc-text">线程同步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#synchronized（对象锁）互斥锁"><span class="toc-number">2.1.</span> <span class="toc-text">synchronized（对象锁）互斥锁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法1"><span class="toc-number">2.2.</span> <span class="toc-text">用法1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法2"><span class="toc-number">2.3.</span> <span class="toc-text">用法2</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#死锁"><span class="toc-number">3.</span> <span class="toc-text">死锁</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wait-amp-notify"><span class="toc-number">4.</span> <span class="toc-text">wait&amp;notify</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生产者消费者问题"><span class="toc-number">4.1.</span> <span class="toc-text">生产者消费者问题</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery"><span class="toc-number">1.</span> <span class="toc-text">jQuery</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#windows-onload"><span class="toc-number">1.1.</span> <span class="toc-text">windows.onload</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择器"><span class="toc-number">1.2.</span> <span class="toc-text">选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾类"><span class="toc-number">1.3.</span> <span class="toc-text">尾类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用方法（支持链式编程）"><span class="toc-number">1.4.</span> <span class="toc-text">常用方法（支持链式编程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery创建元素对象"><span class="toc-number">1.5.</span> <span class="toc-text">jQuery创建元素对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQery对象转原生对象"><span class="toc-number">1.6.</span> <span class="toc-text">jQery对象转原生对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原生对象转jquery对象"><span class="toc-number">1.7.</span> <span class="toc-text">原生对象转jquery对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JQuery事件委托"><span class="toc-number">1.8.</span> <span class="toc-text">JQuery事件委托</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AJAX"><span class="toc-number">2.</span> <span class="toc-text">AJAX</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AJAX使用步骤"><span class="toc-number">2.0.1.</span> <span class="toc-text">AJAX使用步骤:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意"><span class="toc-number">2.1.</span> <span class="toc-text">注意</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#最大兼容创建对象"><span class="toc-number">2.1.1.</span> <span class="toc-text">最大兼容创建对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如果是post请求"><span class="toc-number">2.1.2.</span> <span class="toc-text">如果是post请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置当请求状态发生改变时触发回调函数"><span class="toc-number">2.1.3.</span> <span class="toc-text">设置当请求状态发生改变时触发回调函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#封装好的AJAX"><span class="toc-number">2.1.4.</span> <span class="toc-text">封装好的AJAX</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JQuery自带的AJAX"><span class="toc-number">3.</span> <span class="toc-text">JQuery自带的AJAX</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#标准ajax"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">标准ajax</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#也可以使用load方法"><span class="toc-number">3.0.1.</span> <span class="toc-text">也可以使用load方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#get"><span class="toc-number">3.0.1.1.</span> <span class="toc-text">get</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getJSON"><span class="toc-number">3.0.1.2.</span> <span class="toc-text">getJSON</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#serialize-将表单数据序列化"><span class="toc-number">3.0.1.3.</span> <span class="toc-text">serialize()将表单数据序列化</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#post表单"><span class="toc-number">4.</span> <span class="toc-text">post表单</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JSON"><span class="toc-number">5.</span> <span class="toc-text">JSON</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下拉动画"><span class="toc-number">5.1.</span> <span class="toc-text">下拉动画</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>

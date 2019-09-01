@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>线程Thread | Yang_li&#39;s BLOG</title>
+  <title>Tomcat&amp;Servlet | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java的多线程！thread类和runnable接口！~">
-<meta name="keywords" content="JAVA">
+  <meta name="description" content="Tomcat&amp;amp;Servlet是一个WEB容器（web服务器），与常规HTTP服务器（apache，nginx）不同的是，tomcat提供了jsp，servlet的运行环境，能够将jsp转换为servlet类，并且对客户端提供请求响应服务器，tomcat服务器就是使用java开发的，支持多线程，新版本支持热部署">
+<meta name="keywords" content="Tomcat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线程Thread">
-<meta property="og:url" content="http://yoursite.com/2019/08/14/线程/index.html">
+<meta property="og:title" content="Tomcat&amp;Servlet">
+<meta property="og:url" content="http://yoursite.com/2019/08/29/Tomcat&Servlet/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
-<meta property="og:description" content="Java的多线程！thread类和runnable接口！~">
+<meta property="og:description" content="Tomcat&amp;amp;Servlet是一个WEB容器（web服务器），与常规HTTP服务器（apache，nginx）不同的是，tomcat提供了jsp，servlet的运行环境，能够将jsp转换为servlet类，并且对客户端提供请求响应服务器，tomcat服务器就是使用java开发的，支持多线程，新版本支持热部署">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-27T00:59:24.868Z">
+<meta property="og:updated_time" content="2019-09-01T07:50:25.588Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线程Thread">
-<meta name="twitter:description" content="Java的多线程！thread类和runnable接口！~">
+<meta name="twitter:title" content="Tomcat&amp;Servlet">
+<meta name="twitter:description" content="Tomcat&amp;amp;Servlet是一个WEB容器（web服务器），与常规HTTP服务器（apache，nginx）不同的是，tomcat提供了jsp，servlet的运行环境，能够将jsp转换为servlet类，并且对客户端提供请求响应服务器，tomcat服务器就是使用java开发的，支持多线程，新版本支持热部署">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -151,96 +151,213 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-线程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Tomcat&amp;Servlet" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      线程Thread
+      Tomcat&amp;Servlet
     </h1>
   
 
         
-        <a href="/2019/08/14/线程/" class="archive-article-date">
-  	<time datetime="2019-08-14T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
+        <a href="/2019/08/29/Tomcat&Servlet/" class="archive-article-date">
+  	<time datetime="2019-08-29T07:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Java的多线程！<br>thread类和runnable接口！~</p>
+        <h1 id="Tomcat-amp-Servlet"><a href="#Tomcat-amp-Servlet" class="headerlink" title="Tomcat&amp;Servlet"></a>Tomcat&amp;Servlet</h1><p>是一个WEB容器（web服务器），与常规HTTP服务器（apache，nginx）不同的是，tomcat提供了jsp，servlet的运行环境，能够将jsp转换为servlet类，并且对客户端提供请求响应服务器，tomcat服务器就是使用java开发的，支持多线程，新版本支持热部署</p>
 <a id="more"></a>
+
+<h2 id="tomcat目录"><a href="#tomcat目录" class="headerlink" title="tomcat目录"></a>tomcat目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">bin，启动停止等文件存储目录</span><br><span class="line">conf，配置文件</span><br><span class="line">lib，存放配置支持库文件</span><br><span class="line">logs，日志文件</span><br><span class="line">temp，零时文件</span><br><span class="line">webapps，存放服务器项目文件</span><br><span class="line">work，编译核心</span><br></pre></td></tr></table></figure>
+
+<h2 id="初次tomcat使用流程"><a href="#初次tomcat使用流程" class="headerlink" title="初次tomcat使用流程"></a>初次tomcat使用流程</h2><ol>
+<li>下载解压tomcat服务器</li>
+<li>cmd进入tomcat服务器下的bin目录</li>
+<li><code>service.bat install</code> 把服务器安装到系统服务中（可以不用，方便每次开启）</li>
+<li>进入eclipse，添加servers窗口</li>
+<li>添加Apache tomca服务器（响应的版本）</li>
+<li>eclipse进入javaEE模式</li>
+<li>重新添加package explorer窗口</li>
+<li>新建Dynamic Web Project 动态网站项目</li>
+<li>在项目下的WebContent添加页面</li>
+<li>在tomcat中add项目</li>
+<li>启动服务器即可</li>
+</ol>
+<h2 id="server-xml配置文件"><a href="#server-xml配置文件" class="headerlink" title="server.xml配置文件"></a>server.xml配置文件</h2><p>默认主项目访问路径</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">docBase</span>=<span class="string">"主项目名"</span> <span class="attr">path</span>=<span class="string">"/虚拟路径"</span> <span class="attr">reloadable</span>=<span class="string">"true"</span> <span class="attr">source</span>=<span class="string">"org.eclipse.jst.jee.server:jsp1"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>文件服务器</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span>  <span class="attr">docBase</span>=<span class="string">"本级位置"</span> <span class="attr">path</span>=<span class="string">"/虚拟路径"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>访问端口</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">port</span>=<span class="string">"端口号"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Servlet入门"><a href="#Servlet入门" class="headerlink" title="Servlet入门"></a>Servlet入门</h1><p>​    是applet和server结合，是一种新的CGI(通用网关接口),是JSP的核心实现。可以处理客户端请求（表单数据），并向客户端响应必要的数据或者动态网页。</p>
+<p>​    servlet最初的版本2.0/2.5 需要使用web.xml进行配置，最新版3.0无需配置</p>
+<p><strong>老版本配置：</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--   配置servlet --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- servlet类名 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>HelloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- servlet完整路径 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>jsp2.HelloServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- servlet类名 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>HelloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- servlet入口 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ol>
+<li>在src中新建<strong><u>servlet类</u></strong>，或者新建servlet的<strong><u>实现类</u></strong></li>
+<li>重写<strong><u>doGet，doPost</u></strong>方法</li>
+<li>在类之前添加<strong><u>@WebServlet(“地址”)</u></strong>注解,通过这个地址可以访问到后台</li>
+</ol>
+<h2 id="servlet生命周期"><a href="#servlet生命周期" class="headerlink" title="servlet生命周期"></a>servlet生命周期</h2><p><strong>servlet是单例模式</strong></p>
+<ul>
+<li>在服务器启动时，会检查配置信息（web.xml），对所有的servlet，进行检查</li>
+<li>在客户端发送第一个请求时init方法只会被执行一次，完成初始化</li>
+<li>在服务器执行时，传入表单的get/post决定调用doget还是dopost方法</li>
+<li>在服务器关闭时 destroy方法会被执行一次</li>
+</ul>
 <hr>
-<h1 id="线程-Thread"><a href="#线程-Thread" class="headerlink" title="线程 (Thread)"></a>线程 (Thread)</h1><h2 id="进程-（静态）"><a href="#进程-（静态）" class="headerlink" title="进程 （静态）"></a>进程 （静态）</h2><p>​    每一个应用程序都是一个正在执行的任务，进程是计算机中应用程序的基本单元</p>
-<h2 id="线程-（动态）"><a href="#线程-（动态）" class="headerlink" title="线程 （动态）"></a>线程 （动态）</h2><p>一个进程包含多个子任务、每一个子任务对应一个线程</p>
-<h2 id="线程的创建与启动"><a href="#线程的创建与启动" class="headerlink" title="线程的创建与启动"></a>线程的创建与启动</h2><p><strong>四种方式：</strong></p>
+<h1 id="服务器获取前端数据"><a href="#服务器获取前端数据" class="headerlink" title="服务器获取前端数据"></a>服务器获取前端数据</h1><ol>
+<li>form表单的action=”后台servlet地址”</li>
+<li>提交后servlet通过get/post方法获取表单</li>
+<li>request.getParameter(“name”) 【获取表单项的值】</li>
+<li>request.setAttribute(属性，值)【设置请求的键值对】</li>
+<li>request.getAttribute(“后台数据项名”)【获取后台数据】</li>
+</ol>
+<h2 id="Servlet的方法"><a href="#Servlet的方法" class="headerlink" title="Servlet的方法"></a>Servlet的方法</h2><ul>
+<li><strong>doGet()</strong></li>
+</ul>
+<p>表单get提交执行的方法</p>
 <ul>
-<li>实现Runnable接口（需要新的Thread中转）</li>
-<li>继承Thread类（局限性高，但是可以直接start）</li>
-<li>实现Callable接口，创建FutureTask</li>
-<li></li>
+<li><strong>doPost()</strong></li>
 </ul>
-<p>###Runnable函数接口</p>
-<p>需要实现run方法（不能直接调用）</p>
-<p>调用线程run方法需要用线程类（Thread）调用.rstart方法</p>
-<p>###Runnable - 可线程类</p>
+<p>表单post提交执行的方法</p>
 <ul>
-<li>.run()【执行该线程】</li>
-<li>.sleep(毫秒数)【休眠】</li>
-<li>.activeCount()【返回当前活跃线程数（主线程也算）】</li>
-<li>.getName()【获取当前线程的名称】</li>
-<li>.getPriority()【显示当前线程的优先级】</li>
-<li>.setPriority()【设置线程的优先级，<strong>优先级高的先执行</strong>】</li>
-<li>.getState()【获取当前线程的优先级】</li>
-<li>.interrupt()【<strong>标记</strong>线程中断】</li>
-<li>.isinterrupt()【判断中断标记】</li>
-<li>Thread.currentThread().getName()【获取本实现类的进程的名字】</li>
+<li><strong>service()</strong><ul>
+<li>在执行doGet()或者doPost()之前，都会先执行service</li>
+<li>由service()方法进行判断，到底该调用doGet还是doPost</li>
+<li>所以，有时候可以直接重写service方法，不区分get还是post</li>
 </ul>
-<h3 id="Thread-线程对象"><a href="#Thread-线程对象" class="headerlink" title="Thread 线程对象"></a>Thread 线程对象</h3><ul>
-<li><strong>Thread(Runnable实现类)【基于实现类的run方法定义一个新的线程对象】</strong></li>
-<li>.start(对象)【多线程执行某个对象的run方法】</li>
+</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//基于runnable实现类定义线程</span></span><br><span class="line">实现runnable类 对象名 = <span class="keyword">new</span> 实现runnable类();</span><br><span class="line">Thread t = <span class="keyword">new</span> Thread(对象名);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
-
-<p>##线程终止方式</p>
+<h2 id="常用获取表单数据方法"><a href="#常用获取表单数据方法" class="headerlink" title="常用获取表单数据方法"></a>常用获取表单数据方法</h2><ul>
+<li><p>request.parameter(“name”)【根据name获取值（只能获取一个）】</p>
+</li>
+<li><p>request.getParameterMap();【获取所有键值对】</p>
 <ul>
-<li>标记中断，return 【线程内部停止】</li>
-<li>异常中断，根据.interrupt()【<strong>标记</strong>线程中断，外部控制中断】</li>
-<li>直接中断.stop()【不推荐，线程锁丢了，可能导致不安全】</li>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		取所有键值对</span></span><br><span class="line">Map allreq = req.getParameterMap();</span><br><span class="line"><span class="comment">//		获取键集</span></span><br><span class="line">Set&lt;String&gt; keySet = allreq.keySet();</span><br><span class="line"><span class="keyword">for</span> (String key : keySet) &#123;</span><br><span class="line">    String[] values = (String[]) allreq.get(key);</span><br><span class="line">    <span class="keyword">for</span> (String val : values) &#123;</span><br><span class="line">        System.out.println(key+<span class="string">"/"</span>+val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="后台线程-（守护线程）"><a href="#后台线程-（守护线程）" class="headerlink" title="后台线程 - （守护线程）"></a>后台线程 - （守护线程）</h2><p>在线程内创建线程，并执行该线程的<strong>.setDaemon(true);</strong>方法，即可设置成守护线程,自己关闭，守护线程也关闭</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实现runnable类 对象名 = <span class="keyword">new</span> 实现runnable类();</span><br><span class="line">Thread t = <span class="keyword">new</span> Thread(对象名);</span><br><span class="line">t.setDaemon(<span class="keyword">true</span>);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
-
-<h1 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h1><h2 id="synchronized（对象锁）互斥锁"><a href="#synchronized（对象锁）互斥锁" class="headerlink" title="synchronized（对象锁）互斥锁"></a>synchronized（对象锁）互斥锁</h2><h2 id="用法1"><a href="#用法1" class="headerlink" title="用法1"></a>用法1</h2><p>​    直接在线程内方法中加上synchronized修饰</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">getMoney</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br></pre></td></tr></table></figure>
-
-<p>​    就可以在<strong>多线程调用一个线程对象</strong>的方法时，最多<strong>同时只能有一个线程</strong>获取该对象的方法。</p>
-<h2 id="用法2"><a href="#用法2" class="headerlink" title="用法2"></a>用法2</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//线程方法内使用synchronized获取，并锁住某个对象</span></span><br><span class="line"><span class="keyword">synchronized</span> (对象)&#123;</span><br><span class="line">	<span class="comment">//锁住对象之后执行的过程</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h1><ul>
-<li>多个线程都在等待对方释放所占有的资源，死锁经典问题：<strong>哲学家吃饭</strong></li>
-<li><strong>每个线程都在等待对方释放自己需要的资源，形成死锁</strong></li>
-</ul>
-<h1 id="wait-amp-notify"><a href="#wait-amp-notify" class="headerlink" title="wait&amp;notify"></a>wait&amp;notify</h1><p>​    <strong>wait和notify一般成对存在</strong></p>
+</li>
+<li><p>request.getParameterNames();【获取表单所有的name】</p>
 <ul>
-<li>对象.wait()【使用了该对象的进程<strong>进入等待状态</strong>】</li>
-<li>对象.notify()【<strong>当前</strong>使用该对象的进程<strong>退出等待</strong>】</li>
-<li>对象.notifyall()【<strong>所有</strong>使用了该对象的进程<strong>退出等待</strong>】</li>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		取所有键(表单元素的name值)</span></span><br><span class="line">Enumeration&lt;String&gt; names = req.getParameterNames();</span><br><span class="line"><span class="keyword">while</span>(names.hasMoreElements())&#123;</span><br><span class="line">    System.out.println(names.nextElement());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取obj资源</span></span><br><span class="line"><span class="keyword">synchronized</span> (obj) &#123;</span><br><span class="line">    <span class="comment">//使用资源的过程</span></span><br><span class="line">    obj.wait();<span class="comment">//资源进入等待状态,以供别人使用,或者等待释放。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取obj资源</span></span><br><span class="line"><span class="keyword">synchronized</span> (obj) &#123;</span><br><span class="line">    <span class="comment">//释放obj的所有wait</span></span><br><span class="line">    obj.notifyAll();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>##wait和sleep区别？</p>
+</li>
+<li><p>request.getParameterValues(“lang”);【获取表单所有name=lang元素的值】</p>
 <ul>
-<li>sleep()需要毫秒数为参数，执行后，线程会进入休眠状态（让出cpu时间片），时间到达后，线程会自动唤醒。</li>
-<li>wait()不需要参数，会让使用该对象的线程进入休眠，<strong>唤醒需要使用notify或notifyall</strong>来让<strong>休眠的进程</strong>退出等待（继续wait()后面执行）</li>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		根据元素name获取所有值</span></span><br><span class="line">String[] values = req.getParameterValues(<span class="string">"lang"</span>);</span><br><span class="line"><span class="keyword">for</span> (String s : values) &#123;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
-<h2 id="生产者消费者问题"><a href="#生产者消费者问题" class="headerlink" title="生产者消费者问题"></a>生产者消费者问题</h2><p>生产者 producer</p>
-<p>消费者customer</p>
+</li>
+</ul>
+<hr>
+<h2 id="服务器传数据给前端"><a href="#服务器传数据给前端" class="headerlink" title="服务器传数据给前端"></a>服务器传数据给前端</h2><p><strong>传输数据回界面</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置编码</span></span><br><span class="line">response.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line"><span class="comment">//获取response的字符输出流</span></span><br><span class="line">PrintWriter pw = response.getWriter();</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">pw.print(json);</span><br><span class="line"><span class="comment">//刷新</span></span><br><span class="line">pw.flush();</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="请求转发-amp-重定向"><a href="#请求转发-amp-重定向" class="headerlink" title="请求转发&amp;重定向"></a>请求转发&amp;重定向</h2><h3 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h3><p>response.sendRedirect(“地址”)；</p>
+<h3 id="请求转发"><a href="#请求转发" class="headerlink" title="请求转发"></a>请求转发</h3><p>request.getRequestDispatcher(“地址”).forward(request,response);</p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ul>
+<li>重定向：客户端跳转，跳转由<strong>客户端实现</strong>，地址栏会<strong>显示最后一次的地址</strong>，只会显示第一次的请求数据</li>
+<li>请求准发：服务端跳转，后续的请求是由<strong>服务端发起</strong>的，<strong>地址栏只会显示第一次请求的地址</strong>，可以继续传递数据（也可以更改数据再传）</li>
+</ul>
+<h1 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h1><h2 id="上传步骤"><a href="#上传步骤" class="headerlink" title="上传步骤"></a>上传步骤</h2><ul>
+<li><p>form表单method设置为post（地址栏大小不够文件）</p>
+</li>
+<li><p>form表单enctype=”multipart/form-data”（以二进制编码传输）</p>
+</li>
+<li><p>在servlet类中添加 @MultipartConfig 注解（接受为2进制）</p>
+</li>
+<li><p>request.getPart(“文件input的name”);（获取文件part）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		获取文件名</span></span><br><span class="line">String myfilename = part.getSubmittedFileName();</span><br><span class="line"><span class="comment">//		获取文件类型</span></span><br><span class="line">String type = part.getContentType();</span><br><span class="line"><span class="comment">//		获取文件大小</span></span><br><span class="line"><span class="keyword">long</span> size = part.getSize();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>part..getInputStream();（获取输入流，手动保存）</p>
+</li>
+<li><p>part.write(路径);（直接保存）</p>
+</li>
+</ul>
+<h2 id="获取服务器路径"><a href="#获取服务器路径" class="headerlink" title="获取服务器路径"></a>获取服务器路径</h2><p><strong>myfile在WebContent中</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String base = request.getServletContext().getRealPath(<span class="string">"myfile"</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建路径保存"><a href="#创建路径保存" class="headerlink" title="创建路径保存"></a>创建路径保存</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		创建路径</span></span><br><span class="line">File path = <span class="keyword">new</span> File(<span class="string">"d:/fwq"</span>);</span><br><span class="line"><span class="keyword">if</span>(!path.exists())&#123;			</span><br><span class="line">    path.mkdirs();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//File.separator 地址分隔符</span></span><br><span class="line">String p = path.getAbsolutePath()+File.separator+myfilename;</span><br><span class="line">part.write(p);</span><br></pre></td></tr></table></figure>
+
+<h2 id="多文件上传"><a href="#多文件上传" class="headerlink" title="多文件上传"></a>多文件上传</h2><p><strong>servlet类最好做一个限制</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MultipartConfig</span>(</span><br><span class="line">    <span class="comment">//		文件内存缓存区间</span></span><br><span class="line">    fileSizeThreshold=<span class="number">1024</span>*<span class="number">1024</span>,</span><br><span class="line">    <span class="comment">//		临时缓存目录</span></span><br><span class="line">    location=<span class="string">"d:/temp"</span>,</span><br><span class="line">    <span class="comment">//		单个文件最大字节数</span></span><br><span class="line">    maxFileSize=<span class="number">1024</span>*<span class="number">1024</span>*<span class="number">200</span>,</span><br><span class="line">    <span class="comment">//		表单最大节数</span></span><br><span class="line">    maxRequestSize=<span class="number">1024</span>*<span class="number">1024</span>*<span class="number">500</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>request.getParts();【获取表单所有数据】</li>
+<li>parts.forEach【遍历所有数据】</li>
+<li>part.getSubmittedFileName();【每一次都获取文件名】</li>
+<li>part.write(base+File.separator+fileName);【写入文件】</li>
+</ol>
+<p>完整代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		设置根目录</span></span><br><span class="line">String base = request.getServletContext().getRealPath(<span class="string">"myfile"</span>);</span><br><span class="line"><span class="comment">//		获取所有上传的信息</span></span><br><span class="line">Collection&lt;Part&gt; parts = request.getParts();</span><br><span class="line">parts.forEach(part-&gt;&#123;</span><br><span class="line">    <span class="comment">//			part为每一次遍历到的文件</span></span><br><span class="line">    String fileName = part.getSubmittedFileName();</span><br><span class="line">    String type = part.getContentType();</span><br><span class="line">    <span class="keyword">long</span> size = part.getSize();</span><br><span class="line"></span><br><span class="line">    System.out.println(fileName);</span><br><span class="line">    System.out.println(type);</span><br><span class="line">    System.out.println(size);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        part.write(base+File.separator+fileName);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="文件上传转成UUID名"><a href="#文件上传转成UUID名" class="headerlink" title="文件上传转成UUID名"></a>文件上传转成UUID名</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置存储位置</span></span><br><span class="line">String base = <span class="string">"d://fileserver"</span>;</span><br><span class="line"><span class="comment">//获取所有表单对象</span></span><br><span class="line">Collection&lt;Part&gt; parts = request.getParts();</span><br><span class="line"><span class="comment">//遍历每一个表单控件</span></span><br><span class="line"><span class="keyword">for</span> (Part part : parts) &#123;</span><br><span class="line">    <span class="comment">//如果大小&gt;0（文件）</span></span><br><span class="line">    <span class="keyword">if</span>(part.getSize()&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="comment">//获取文件名</span></span><br><span class="line">        String fname = part.getSubmittedFileName();</span><br><span class="line">        <span class="comment">//创建一个UUID</span></span><br><span class="line">        String uuid= UUID.randomUUID().toString();</span><br><span class="line">        <span class="comment">//拼接UUID和文件后缀名</span></span><br><span class="line">        String suffix = uuid+fname.substring(fname.lastIndexOf(<span class="string">"."</span>));</span><br><span class="line">        fname = uuid+suffix;</span><br><span class="line">        <span class="comment">//写入路径</span></span><br><span class="line">        part.write(base+File.separator+fname);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>完整代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"conn"</span>);</span><br><span class="line">ArrayList&lt;String&gt; filenames = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">String base = <span class="string">"d://fileserver"</span>;</span><br><span class="line">Collection&lt;Part&gt; parts = request.getParts();</span><br><span class="line"><span class="keyword">for</span> (Part part : parts) &#123;</span><br><span class="line">    <span class="keyword">if</span>(part.getSize()&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        String fname = part.getSubmittedFileName();</span><br><span class="line">        String uuid= UUID.randomUUID().toString();</span><br><span class="line">        String suffix = uuid+fname.substring(fname.lastIndexOf(<span class="string">"."</span>));</span><br><span class="line">        fname = uuid+suffix;</span><br><span class="line">        filenames.add(fname);</span><br><span class="line">        part.write(base+File.separator+fname);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">request.setAttribute(<span class="string">"files"</span>, filenames);</span><br><span class="line">request.getRequestDispatcher(<span class="string">"result2.jsp"</span>).forward(request, response);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h1><ol>
+<li>遍历parts中所有文件</li>
+<li>把文件保存到文件服务器路径（<strong>和虚拟文件服务器位置相同</strong>）</li>
+<li>获取所有文件名，存入list集合</li>
+<li>把list存入request请求</li>
+<li>转发数据到响应界面</li>
+<li>响应界面遍历request中的list</li>
+<li>每遍历一次就循环生成img图片（<strong>Img位置指向文件服务器虚拟路径</strong>）</li>
+</ol>
+<p><strong>完整过程</strong></p>
+<p>后台：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		设置根目录</span></span><br><span class="line">String base =<span class="string">"d:/fileserver"</span>;</span><br><span class="line"><span class="comment">//		声明集合存储文件名</span></span><br><span class="line">ArrayList&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"><span class="comment">//		获取所有上传的信息</span></span><br><span class="line">Collection&lt;Part&gt; parts = request.getParts();</span><br><span class="line">parts.forEach(part-&gt;&#123;</span><br><span class="line">    <span class="comment">//			part为每一次遍历到的文件</span></span><br><span class="line">    <span class="comment">//读取文件名</span></span><br><span class="line">    String fileName = part.getSubmittedFileName();</span><br><span class="line">    <span class="comment">//读取文件类型</span></span><br><span class="line">    String type = part.getContentType();</span><br><span class="line">    <span class="comment">//读取文件大小</span></span><br><span class="line">    <span class="keyword">long</span> size = part.getSize();</span><br><span class="line">    <span class="comment">//把文件写到文件服务器路径中</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        part.write(base+File.separator+fileName);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//			把文件名加入list</span></span><br><span class="line">    list.add(fileName);</span><br><span class="line">    <span class="comment">//			把文件集合加入到request</span></span><br><span class="line">    request.setAttribute(<span class="string">"files"</span>, list);</span><br><span class="line">    <span class="comment">//			请求转发</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        request.getRequestDispatcher(<span class="string">"result2.jsp"</span>).forward(request, response);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>前端：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%  </span><br><span class="line">    <span class="comment">//遍历存name的list</span></span><br><span class="line">    Object obj = request.getAttribute(<span class="string">"files"</span>);</span><br><span class="line">    ArrayList&lt;String&gt; names = (ArrayList&lt;String&gt;)obj;</span><br><span class="line">    <span class="keyword">for</span>(String name:names)</span><br><span class="line">&#123;%&gt;</span><br><span class="line">    &lt;img src=<span class="string">"../imgs/&lt;%=name %&gt;"</span> alt=<span class="string">""</span> /&gt;</span><br><span class="line">    &lt;a href="../imgs/&lt;%=name %&gt;"&gt;&lt;%=name%&gt;&lt;/a&gt;&lt;br /&gt;</span><br><span class="line">&lt;%&#125;%&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="输出文件到浏览器"><a href="#输出文件到浏览器" class="headerlink" title="输出文件到浏览器"></a>输出文件到浏览器</h2><h4 id="设置响应头"><a href="#设置响应头" class="headerlink" title="设置响应头"></a>设置响应头</h4><p>content-disposition【下载文件标识】</p>
+<p>attachment【下载到本地】</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.setHeader(<span class="string">"content-disposition"</span>, <span class="string">"attachment;finename="</span>+name);</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取request的输出流"><a href="#获取request的输出流" class="headerlink" title="获取request的输出流"></a>获取request的输出流</h4><ul>
+<li>request.getPutStream()</li>
+</ul>
+<p><strong>向request输出字节流/字符流即可实现下载</strong></p>
+<hr>
+<p><strong>完整代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//		获取文件名</span></span><br><span class="line">String name = request.getParameter(<span class="string">"fname"</span>);</span><br><span class="line"><span class="comment">//		拼接文件路径</span></span><br><span class="line">String path = <span class="string">"d:/fileserver"</span>+File.separator+name;</span><br><span class="line"><span class="comment">//		输入流</span></span><br><span class="line">FileInputStream fis = <span class="keyword">new</span> FileInputStream(path);</span><br><span class="line"><span class="comment">//		输出流</span></span><br><span class="line">ServletOutputStream os = response.getOutputStream();</span><br><span class="line"><span class="comment">//		设置响应头</span></span><br><span class="line">response.setHeader(<span class="string">"content-disposition"</span>, <span class="string">"attachment;finename="</span>+name);</span><br><span class="line"><span class="comment">//		读取</span></span><br><span class="line"><span class="comment">//		缓存区</span></span><br><span class="line"><span class="keyword">byte</span> temp[] = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line"><span class="comment">//		长度</span></span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="comment">//		循环读取</span></span><br><span class="line"><span class="keyword">while</span>((len=fis.read(temp))&gt;<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="comment">//			写入</span></span><br><span class="line">    os.write(temp,<span class="number">0</span>,len);</span><br><span class="line">&#125;</span><br><span class="line">os.close();</span><br><span class="line">fis.close();</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h2 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h2><p>设置request或者response的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.setCharacterEncoding(<span class="string">"编码"</span>)方法</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取web项目中的src"><a href="#获取web项目中的src" class="headerlink" title="获取web项目中的src"></a>获取web项目中的src</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DBUtils.class.getClassLoader().getResourceAsStream(<span class="string">"jdbc.properties"</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="无法用ajax下载文件解决办法"><a href="#无法用ajax下载文件解决办法" class="headerlink" title="无法用ajax下载文件解决办法"></a>无法用ajax下载文件解决办法</h2><ul>
+<li>请求后，获取文件路径path</li>
+<li>新建a标签对象，href值设置为path</li>
+<li>用<strong>原生</strong>click()方法点击a标签即可</li>
+</ul>
+<p>代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取下载路径</span></span><br><span class="line"><span class="keyword">var</span> path = $(<span class="keyword">this</span>).find(<span class="string">'span[name=path]'</span>).text();</span><br><span class="line"><span class="comment">// 创建a标签</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'创建a对象'</span>);</span><br><span class="line"><span class="keyword">var</span> a = $(<span class="string">'&lt;a&gt;'</span>);</span><br><span class="line">a.attr(<span class="string">'href'</span>,<span class="string">'download?path='</span>+path);</span><br><span class="line">a.get(<span class="number">0</span>).click();</span><br></pre></td></tr></table></figure>
+
+<h2 id="登录界面"><a href="#登录界面" class="headerlink" title="登录界面"></a>登录界面</h2><ul>
+<li>直接post提交表单</li>
+<li>如果登录正确，则转发到登录后界面</li>
+<li>如果登录错误，则重定向到登录界面</li>
+</ul>
 
       
 
@@ -280,7 +397,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
         		</li>
       		
 		</ul>
@@ -336,7 +453,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/14/线程/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/29/Tomcat&Servlet/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -350,18 +467,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/15/网络/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          网络
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/13/IO/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IO流</div>
+    <a href="/2019/08/28/JQuery/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jQuery</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -388,7 +496,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#线程-Thread"><span class="toc-number">1.</span> <span class="toc-text">线程 (Thread)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#进程-（静态）"><span class="toc-number">1.1.</span> <span class="toc-text">进程 （静态）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线程-（动态）"><span class="toc-number">1.2.</span> <span class="toc-text">线程 （动态）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线程的创建与启动"><span class="toc-number">1.3.</span> <span class="toc-text">线程的创建与启动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Thread-线程对象"><span class="toc-number">1.3.1.</span> <span class="toc-text">Thread 线程对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后台线程-（守护线程）"><span class="toc-number">1.4.</span> <span class="toc-text">后台线程 - （守护线程）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#线程同步"><span class="toc-number">2.</span> <span class="toc-text">线程同步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#synchronized（对象锁）互斥锁"><span class="toc-number">2.1.</span> <span class="toc-text">synchronized（对象锁）互斥锁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法1"><span class="toc-number">2.2.</span> <span class="toc-text">用法1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法2"><span class="toc-number">2.3.</span> <span class="toc-text">用法2</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#死锁"><span class="toc-number">3.</span> <span class="toc-text">死锁</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wait-amp-notify"><span class="toc-number">4.</span> <span class="toc-text">wait&amp;notify</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生产者消费者问题"><span class="toc-number">4.1.</span> <span class="toc-text">生产者消费者问题</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Tomcat-amp-Servlet"><span class="toc-number">1.</span> <span class="toc-text">Tomcat&amp;Servlet</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#tomcat目录"><span class="toc-number">1.1.</span> <span class="toc-text">tomcat目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初次tomcat使用流程"><span class="toc-number">1.2.</span> <span class="toc-text">初次tomcat使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server-xml配置文件"><span class="toc-number">1.3.</span> <span class="toc-text">server.xml配置文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Servlet入门"><span class="toc-number">2.</span> <span class="toc-text">Servlet入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用步骤"><span class="toc-number">2.1.</span> <span class="toc-text">使用步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#servlet生命周期"><span class="toc-number">2.2.</span> <span class="toc-text">servlet生命周期</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#服务器获取前端数据"><span class="toc-number">3.</span> <span class="toc-text">服务器获取前端数据</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Servlet的方法"><span class="toc-number">3.1.</span> <span class="toc-text">Servlet的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用获取表单数据方法"><span class="toc-number">3.2.</span> <span class="toc-text">常用获取表单数据方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#服务器传数据给前端"><span class="toc-number">3.3.</span> <span class="toc-text">服务器传数据给前端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#请求转发-amp-重定向"><span class="toc-number">3.4.</span> <span class="toc-text">请求转发&amp;重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#重定向"><span class="toc-number">3.4.1.</span> <span class="toc-text">重定向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#请求转发"><span class="toc-number">3.4.2.</span> <span class="toc-text">请求转发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#区别"><span class="toc-number">3.4.3.</span> <span class="toc-text">区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件上传"><span class="toc-number">4.</span> <span class="toc-text">文件上传</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#上传步骤"><span class="toc-number">4.1.</span> <span class="toc-text">上传步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取服务器路径"><span class="toc-number">4.2.</span> <span class="toc-text">获取服务器路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建路径保存"><span class="toc-number">4.3.</span> <span class="toc-text">创建路径保存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多文件上传"><span class="toc-number">4.4.</span> <span class="toc-text">多文件上传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件上传转成UUID名"><span class="toc-number">4.5.</span> <span class="toc-text">文件上传转成UUID名</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件下载"><span class="toc-number">5.</span> <span class="toc-text">文件下载</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#输出文件到浏览器"><span class="toc-number">5.1.</span> <span class="toc-text">输出文件到浏览器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#设置响应头"><span class="toc-number">5.1.0.1.</span> <span class="toc-text">设置响应头</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取request的输出流"><span class="toc-number">5.1.0.2.</span> <span class="toc-text">获取request的输出流</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见问题"><span class="toc-number">6.</span> <span class="toc-text">常见问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#中文乱码"><span class="toc-number">6.1.</span> <span class="toc-text">中文乱码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取web项目中的src"><span class="toc-number">6.2.</span> <span class="toc-text">获取web项目中的src</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无法用ajax下载文件解决办法"><span class="toc-number">6.3.</span> <span class="toc-text">无法用ajax下载文件解决办法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#登录界面"><span class="toc-number">6.4.</span> <span class="toc-text">登录界面</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
