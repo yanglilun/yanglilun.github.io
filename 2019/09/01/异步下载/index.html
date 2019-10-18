@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Yang_li&#39;s BLOG</title>
+  <title>AJAX异步下载问题 | Yang_li&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: AJAX异步下载问题date: 2019-09-01 18:55:44tags: ajax  ajax异步下载捕获数据流问题">
+  <meta name="description" content="ajax异步下载捕获数据流问题">
+<meta name="keywords" content="ajax">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yang_li&#39;s BLOG">
+<meta property="og:title" content="AJAX异步下载问题">
 <meta property="og:url" content="http://yoursite.com/2019/09/01/异步下载/index.html">
 <meta property="og:site_name" content="Yang_li&#39;s BLOG">
-<meta property="og:description" content="title: AJAX异步下载问题date: 2019-09-01 18:55:44tags: ajax  ajax异步下载捕获数据流问题">
+<meta property="og:description" content="ajax异步下载捕获数据流问题">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-01T15:24:34.402Z">
+<meta property="og:updated_time" content="2019-10-06T08:08:53.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yang_li&#39;s BLOG">
-<meta name="twitter:description" content="title: AJAX异步下载问题date: 2019-09-01 18:55:44tags: ajax  ajax异步下载捕获数据流问题">
+<meta name="twitter:title" content="AJAX异步下载问题">
+<meta name="twitter:description" content="ajax异步下载捕获数据流问题">
   
     <link rel="alternative" href="/atom.xml" title="Yang_li&#39;s BLOG" type="application/atom+xml">
   
@@ -153,12 +154,24 @@
             <article id="post-异步下载" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      AJAX异步下载问题
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/异步下载/" class="archive-article-date">
+  	<time datetime="2019-09-01T10:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: AJAX异步下载问题<br>date: 2019-09-01 18:55:44<br>tags: ajax</p>
-<hr>
-<h1 id="ajax异步下载捕获数据流问题"><a href="#ajax异步下载捕获数据流问题" class="headerlink" title="ajax异步下载捕获数据流问题"></a>ajax异步下载捕获数据流问题</h1><a id="more"></a>
+        <h1 id="ajax异步下载捕获数据流问题"><a href="#ajax异步下载捕获数据流问题" class="headerlink" title="ajax异步下载捕获数据流问题"></a>ajax异步下载捕获数据流问题</h1><a id="more"></a>
 
 <h2 id="问题出现的情况："><a href="#问题出现的情况：" class="headerlink" title="问题出现的情况："></a>问题出现的情况：</h2><p>今天在制作文件下载网站，需要用ajax请求下载文件，用get/post方法传递文件地址到后台，然后利用封装好的FIleDownloadTool（文件下载工具）下载时，发现数据是返回到了ajax请求的方法中，并不是直接返回给了浏览器。</p>
 <h2 id="总结问题："><a href="#总结问题：" class="headerlink" title="总结问题："></a>总结问题：</h2><p>浏览器无法获得后台传来的数据流，被ajax捕获了</p>
@@ -203,6 +216,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ajax</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -266,6 +290,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/09/02/web项目整体构思/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          web项目整体构思
+        
+      </div>
+    </a>
   
   
     <a href="/2019/08/29/Tomcat&Servlet/" id="article-nav-older" class="article-nav-link-wrap">
@@ -420,10 +453,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
@@ -432,11 +461,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">JAVA网络</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -449,6 +486,46 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">常用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">annotation</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Myb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jsp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">xml</a>
               </li>
             
             <div class="clearfix"></div>
