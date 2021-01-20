@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="tool/reset.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/My.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/vue.js" type="text/javascript" charset="utf-8"></script>
+	<title></title>
+	<style type="text/css">
+		th{
+			text-align: center;
+		}
+		div.head{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="root">
+		<h2 class="text-center text-success">获奖及证书查询</h2>
+		<div class="col-xs-12 head">
+			<div class="col-xs-6">
+				<div class="input-group">
+					<div class="input-group-addon">
+						类型
+					</div>
+					<select class="form-control" name="type">
+						<option value ="所有" selected="selected">所有</option>
+						<option v-for="o in type" :value="o">{{o}}</option>
+					</select>					
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="input-group">
+					<div class="input-group-addon">
+						时间
+					</div>
+					<select class="form-control" name="time">
+						<option value ="所有" selected="selected">所有</option>
+						<option v-for="o in time" :value="o">{{mytime(o)}}</option>
+					</select>					
+				</div>
+			</div>
+		</div>
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th>序号</th>
+				<th>名称</th>
+				<th>时间</th>
+				<th>操作</th>
+			</tr>
+			<tr v-if="data.length == 0" >
+				<td colspan="4">该条件下无结果</td>
+			</tr>
+			<tr v-for="o,i in data" :href="o.time+o.name+'.'+o.fname">
+				<td class="col-xs-1">{{i+1}}</td>
+				<td class="col-xs-6">{{o.name}}</td>
+				<td class="col-xs-4">{{mytime(o.time)}}</td>
+				<td class="col-xs-1">
+					<button type="button" class="btn btn-success btn-xs chakan">查看</button>
+				</td>
+			</tr>
+		</table>
+		<p class="t-20 text-center text-info">@Code By Garen QQ:14978435</p>
+	</div>
+	
+	
+	<script type="text/javascript">
+		var vue1 = new Vue({
+			el:'div.root',
+			data:{
+				data:[],
+				back:[],
+				type:[],
+				time:[]
+			},
+			mounted:function(){
+				ckwt('table','button.chakan',function(){
+					var href = $(this).parents('tr').attr('href');
+					var path = 'imgs/'+href;
+					console.log(path);
+					var a = $('<a>');
+					a.attr('target','_blank');
+					a.attr('href',path);
+					a[0].click();
+				})
+			},
+			computed:{
+				mytime:function(){
+					return function(time){
+						if(!checkNoNullReturn([time])){
+							return '无时间';
+						}else{
+							return time;
+						}
+					}
+				}
+			}
+		})
+		
+		
+		$(()=>{
+			$.getJSON('data/data.json',(data)=>{
+				for(var o of data){
+					var t = o.time.split('-')[0];
+					if(vue1.time.indexOf(t) == -1){
+						vue1.time.push(t);
+					}
+					
+					if(vue1.type.indexOf(o.type) == -1){
+						vue1.type.push(o.type);
+					}
+				}
+				
+				
+				$('select[name=type]').on('change',function(){
+					var type = $('select[name=type]').val();
+					var time = $('select[name=time]').val();
+					console.log(type);
+					if(type == '所有'){
+						vue1.data = vue1.back;
+						return;
+					}
+					var arr = [];
+					
+					for(var o of vue1.back){
+						if(time == '所有'){
+							if(o.type == type){
+								arr.push(o);
+							}
+						}else{
+							if(o.type == type && o.time.split('-')[0] == time){
+								arr.push(o);
+							}
+						}
+					}
+					vue1.data = arr;
+				})
+				
+				
+				$('select[name=time]').on('change',function(){
+					var type = $('select[name=type]').val();
+					var time = $('select[name=time]').val();
+					console.log(time);
+					if(time == '所有'){
+						vue1.data = vue1.back;
+						return;
+					}
+					var arr = [];
+					for(var o of vue1.back){
+						if(type == '所有'){
+							if(o.time.split('-')[0] == time){
+								arr.push(o);
+							}							
+						}else{
+							if(o.type == type && o.time.split('-')[0] == time){
+								arr.push(o);
+							}
+						}
+					}
+					vue1.data = arr;
+				})
+				
+				vue1.data = data;
+				vue1.back = data;
+			})
+		})
+	</script>
+</body>
+</html>
