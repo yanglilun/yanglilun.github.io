@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<title></title>
+	<style type="text/css">
+		#before,
+		#after{
+			resize: none;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="col-xs-12">
+		<textarea id="before" class="form-control"></textarea>
+	</div>
+	<div class="col-xs-12">
+		<button id="bt1" type="button" class="btn btn-success col-xs-6 col-xs-offset-3">转换</button>
+	</div>
+	<div class="col-xs-12">
+		<textarea id="after" class="form-control"></textarea>
+	</div>
+	
+	
+	<script type="text/javascript">
+		$(function(){
+			$('#bt1').on('click',function(){
+				var before = $('#before').val();
+				
+				var lines = before.split('\n');
+				
+				
+				var alljiekou = [];
+				for(var line of lines){
+					if(line.indexOf('* 请求路径:`') != -1){
+						var arr = line.split('');
+						var a = arr.slice(8,arr.length-1).join('');
+						
+						if(alljiekou.indexOf(a) != -1){
+							alert('接口名重复:'+a);
+							return;
+						}else{
+							alljiekou.push(a);
+						}
+					}
+				}
+				
+				
+				
+				var temp = before.split('##');
+				console.log(temp.length);
+				
+				var str = temp[0];
+				
+				for(var i = 1;i<temp.length;i++){
+					str +='## '+i+'.'+temp[i];
+				}
+				
+				$('#after').text(str);
+			})
+		})
+	</script>
+</body>
+</html>

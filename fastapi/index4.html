@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<title></title>
+</head>
+<body>
+	<h2 class="text-center text-info">生成文档</h2>
+	<hr >
+	<div class="col-xs-12" style="margin-bottom: 20px;">
+		<div class="col-xs-2">
+			<p class="text-center">接口功能</p>
+		</div>
+		<div class="col-xs-10">
+			<input type="text" id="jiekouming" class="form-control"/>
+		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-md-offset-2 container">
+		<div class="col-xs-4 col-xs-offset-1">
+			<input type="text" placeholder="请输入接口路径" class="form-control" name="lujing">
+		</div>
+		<div class="col-xs-5 col-xs-offset-1">
+			<span class="col-xs-5">请求类型</span>
+			<div class="col-xs-7">
+				<select class="form-control" name="leixing">
+					<option value="post">POST</option>
+					<option value ="get">GET</option>
+				</select>				
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-md-offset-2 container" style="margin-top: 30px;">
+		<div class="col-xs-6">
+			<p class="text-center">参数</p>
+			<textarea class="form-control" style="resize: none;height: 200px;padding: 0;" name="canshu"></textarea>
+		</div>
+		<div class="col-xs-6">
+			<p class="text-center">返回值</p>
+			<textarea class="form-control" style="resize: none;height: 200px;" name="fanhui"></textarea>
+		</div>
+	</div>
+	
+	<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4" style="margin-top: 20px;">
+		<button type="button" class="shengcheng btn btn-success btn-block">生成(自动复制)</button>
+	</div>
+	<div class="col-xs-12 col-md-8 col-md-offset-2" style="margin-top: 20px;">
+		<textarea class="form-control" style="height: 300px;" id="jieguo"></textarea>
+	</div>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('button.shengcheng').on('click',function(){
+				var str = '';
+				// 获取接口名
+				var jkm = $('#jiekouming').val();
+				str+='## '+jkm+'\n'
+				
+				// 获取接口路径
+				var lujing = $('input[name=lujing]').val();
+				// 获取请求类型
+				var leixing = $('select[name=leixing]').val();
+				// 获取参数
+				var canshu = $('textarea[name=canshu]').val();
+				var lines = canshu.split('\n');
+				
+				// 获取返回值
+				var fanhui = $('textarea[name=fanhui]').val();
+				var fanhuis = fanhui.split('\n');
+				
+				str += '* 请求路径:`'+lujing+'`\n';
+				str += '* 请求类型:`'+leixing+'`\n';
+				
+				if(canshu!=''){
+					str += '\n参数:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					for(var line of lines){
+						var l = line.split(' ');
+						l.splice(1,0,'String');
+						
+						str +='|'+l.join('|')+'|\n';
+					}					
+				}else{
+					str += '\n参数:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					str += '|无参数|\n';
+				}
+				if(fanhui=="tf"){
+					str += '\n返回值:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					str += '|true|boolean|成功|\n';
+					str += '|false|boolean|失败|\n';
+				}else if(fanhui!=''){
+					str += '\n返回值:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					for(var line of fanhuis){
+						var l = line.split(' ');
+						switch(l[1]){
+							case 'i':
+								l[1]='int';
+								break;
+							case 's':
+								l[1]='String';
+								break;
+							case 'd':
+								l[1]='double';
+								break;
+						}
+						str +='|'+l.join('|')+'|\n';
+					}						
+				}
+				
+				$('#jieguo').text(str);
+				$('#jieguo').select();
+				document.execCommand("Copy"); // 执行浏览器复制命令
+			})
+		})
+		
+		
+	</script>
+</body>
+</html>

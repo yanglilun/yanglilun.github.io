@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="tool/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="tool/donghua.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/mdjs.js" type="text/javascript" charset="utf-8"></script>
+	<title></title>
+	<style type="text/css">
+		#qq{
+			height: 100%;
+		}
+		*::-webkit-scrollbar{
+			width: 5px;
+		}
+		*::-webkit-scrollbar-thumb{
+			width: 5px;
+			background-color: green;
+			border-radius: 2.5px;
+		}
+		html,body{
+			height: 100%;
+			overflow-y: hidden;
+		}
+		div.left{
+			width: 35%;
+			height: 100%;
+			float: left;
+			border-right: 1px solid rgba(0,0,0,0.6);
+		}
+		div.center{
+			width: 25%;
+			height: 100%;
+			float: left;
+			
+		}
+		div.right{
+			width: 40%;
+			height: 100%;
+			float: left;
+			border-right: 1px solid rgba(0,0,0,0.6);
+			overflow-y: scroll;
+		}
+		div.left>div{
+			margin-top: 10px;
+		}
+		#jieguo{
+			width: 100%;
+			height: 100%;
+			overflow-y: scroll;
+			resize: none;
+			border: 0;
+			outline: none;
+		}
+		ul>li{
+			text-indent: 2em;
+		}
+		table{
+			width: 80%;
+			margin: 0 auto 0 auto;
+			border: 1px solid rgba(0,0,0,0.5);
+			padding: 5px;
+			text-align: center;
+		}
+		th,td{
+			border: 1px solid rgba(0,0,0,0.4);
+		}
+		p{
+			margin-top: 5px;
+		}
+		h2{
+			margin-top: 20px;
+			border-bottom: 1px solid rgba(0,0,0,0.4);
+		}
+		code:hover{
+			cursor: pointer;
+			background-color: rgba(0,0,0,0.2);
+		}
+		
+		#qq,#qqshow:hover{
+			cursor: pointer;
+		}
+		#qqshow{
+			position: absolute;
+			height: 90%;
+			top: 5%;
+			left: 50%;
+			z-index: 99;
+			border: 1px solid rgba(0,0,0,0.4);
+			border-radius: 10px;
+			background-color: white;
+			display: none;
+		}
+		#qqshow>img{
+			height: 90%;
+		}
+		div.tanchuang{
+			position: absolute;
+			width: 60%;
+			height: 50%;
+			left: 20%;
+			top: 10%;
+			background-color: white;
+			border: 1px solid rgba(0,0,0,0.4);
+			z-index: 99;
+			border-radius: 10px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.4);
+			padding: 10px;
+			display: none;
+		}
+		textarea.jsonstr{
+			width: 100%;
+			height: calc(100% - 40px);
+			resize: none;
+			border-radius: 10px;
+			border: 0;
+			outline: none;
+			font-size: 15px;
+		}
+		div.under{
+			height: 40px;
+		}
+		div.under>button{
+			height: 40px;
+		}
+		div.excel{
+			position: absolute;
+			width: 60%;
+			height: 50%;
+			left: 20%;
+			top: 10%;
+			background-color: white;
+			border: 1px solid rgba(0,0,0,0.4);
+			z-index: 99;
+			border-radius: 10px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.4);
+			padding: 10px;
+			display: none;
+		}
+		div.excel>h3{
+			height: 40px;
+			margin: 0;
+			padding: 0;
+		}
+		textarea[name=excel],
+		textarea[name=excel2json]{
+			width: 50%;
+			height: calc(100% - 90px);
+			margin-bottom: 10px;
+			resize: none;
+			float: left;
+		}
+		div.xinxi button{
+			font-size: 12px;
+		}
+		pre{
+			width: 80%;
+			margin: 0 auto 0 auto;
+		}
+	</style>
+</head>
+<body class="animated slideInRight">
+	<div class="tanchuang">
+		<textarea class="jsonstr"></textarea>
+		<div class="under">
+			<button type="button" class="btn btn-info fuzhi col-xs-4 col-xs-offset-1">复制</button>
+			<button type="button" class="btn btn-danger guanbi col-xs-4 col-xs-offset-2">关闭</button>
+		</div>
+	</div>
+	<div class="excel">
+		<h3 class="text-center">Excel转Json工具</h3>
+		<textarea name="excel" placeholder="在此处粘贴excel数据"></textarea>
+		<textarea name="excel2json"></textarea>
+		<div class="under">
+			<button type="button" class="btn btn-info zhuanhuan col-xs-4 col-xs-offset-1">转换</button>
+			<button type="button" class="btn btn-danger guanbi2 col-xs-4 col-xs-offset-2">关闭</button>
+		</div>
+	</div>
+	<div id="qqshow">
+		<p class="text-center text-danger">点击大图隐藏</p>
+		<img src="https://ae01.alicdn.com/kf/H1d80fec8a0a04b34b5d82b0a38a326ecd.jpg" >
+	</div>
+	<div class="left">
+		<div class="col-xs-12">
+			<p class="text-center">接口名（功能）</p>
+			<div class="col-xs-12">
+				<input type="text" name="jiekouming" id="jiekouming" class="form-control" placeholder="接口功能说明"/>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="col-xs-6">
+				<input type="text" placeholder="接口访问路径" class="form-control" name="lujing">
+			</div>
+			<div class="col-xs-6">
+				<select class="form-control" name="leixing">
+					<option value="post">POST</option>
+					<option value ="get">GET</option>
+				</select>				
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="col-xs-6">
+				<p class="text-center">参数</p>
+				<textarea class="form-control" style="resize: none;height: 200px;" name="canshu" placeholder="字段名 类型(s,i,d) 说明"></textarea>
+			</div>
+			<div class="col-xs-6">
+				<p class="text-center">返回值</p>
+				<textarea class="form-control" style="resize: none;height: 200px;" name="fanhui" placeholder="字段名 类型(s,i,d) 说明"></textarea>
+			</div>
+		</div>
+		<div class="col-xs-10 col-xs-offset-1">
+			<button type="button" class="shengcheng btn btn-success btn-block">生成(自动复制,追加)</button>
+		</div>
+		<div class="col-xs-12" style="height: 200px;">
+			<div class="xinxi col-xs-6">
+				<button type="button" class="btn btn-info btn-block shengchengjson">返回值->json（单个对象）</button>
+				<button type="button" class="btn btn-info btn-block shengchengjson2">返回值->json（多个对象）</button>
+				<button type="button" class="btn btn-warning btn-block excel">Excel 转 json</button>
+				<button type="button" class="btn btn-danger btn-block reset">重置</button>
+				<p class="text-center">Made by Garen</p>
+				<p class="text-center">QQ:14978435</p>
+			</div>
+			<div class="col-xs-6" style="height: 100%;">
+				<img src="https://ae01.alicdn.com/kf/H1d80fec8a0a04b34b5d82b0a38a326ecd.jpg" id="qq" >
+			</div>
+		</div>
+	</div>
+	<div class="right"></div>
+	<div class="center">
+		<textarea id="jieguo"></textarea>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+		$(function(){
+			
+			$('#qqshow').on('click',function(){
+				$(this).addClass('animated bounceOut')
+				setTimeout(function(){
+					$('#qqshow').hide();
+					$('#qqshow').removeClass('animated bounceOut')
+				},1000)
+			})
+			
+			$('#qq').on('click',function(){
+				$('#qqshow').addClass('animated bounceIn')
+				$('#qqshow').show()
+				setTimeout(function(){
+					$('#qqshow').removeClass('animated bounceIn')
+				},1000)
+			})
+			
+			$('div.right').on('click','code',function(){
+				copy($(this).text());
+			})
+			
+			$('#jieguo').on('keyup',function(){
+				var html = Mdjs.md2html($('#jieguo').val());
+				$('div.right').html(html);
+			})
+			
+			
+			$('button.shengcheng').on('click',function(){
+				var str = '';
+				// 获取接口名
+				var jkm = $('#jiekouming').val();
+				str+='## '+jkm+'\n'
+				
+				// 获取接口路径
+				var lujing = $('input[name=lujing]').val();
+				// 获取请求类型
+				var leixing = $('select[name=leixing]').val();
+				// 获取参数
+				var canshu = $('textarea[name=canshu]').val();
+				var lines = canshu.split('\n');
+				
+				// 获取返回值
+				var fanhui = $('textarea[name=fanhui]').val();
+				var fanhuis = fanhui.split('\n');
+				
+				str += '* 请求路径:`'+lujing+'`\n';
+				str += '* 请求类型:`'+leixing+'`\n';
+				
+				if(canshu!=''){
+					str += '\n参数:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					for(var line of lines){
+						var l = line.split(' ');
+						switch(l[1]){
+							case 'i':
+								l[1]='int';
+								break;
+							case 's':
+								l.splice(1,0,'String');
+								l[1]='String'
+								break;
+							case 'd':
+								l.splice(1,0,'double');
+								break;
+						}
+						
+						
+						str +='|'+l.join('|')+'|';
+						if(l.length<4){
+						str +='无|\n';
+						}else{
+							str+='\n';
+						}
+					}
+				}else{
+					str += '\n参数:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					str += '|无参数||||\n';
+				}
+				if(fanhui=="tf"){
+					str += '\n返回值:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					str += '|true|boolean|成功||\n';
+					str += '|false|boolean|失败||\n';
+					$('#jieguo').val($('#jieguo').val()+'\n\n'+str);
+					var html = Mdjs.md2html($('#jieguo').val());
+					$('div.right').html(html);
+					
+					$('#jieguo').select();
+					document.execCommand("Copy"); // 执行浏览器复制命令
+					return;
+				}else if(fanhui!=''){
+					str += '\n返回值:\n\n';
+					str += '|字段|类型|说明|备注|\n|-|-|-|-|\n';
+					for(var line of fanhuis){
+						var l = line.split(' ');
+						if(l[0]=='---'){
+							str+='---|---|---|---\n';
+							continue;
+						}
+						if(l[1]=='list'){
+							if(l[2]==null){
+								str+=l[0]+'|list|对象数组|无\n';
+							}else{
+								str+=l[0]+'|list|对象数组|'+l[2]+'\n';
+							}
+							continue;
+						}
+						if(l[1]=='obj'){
+							if(l[2]==null){
+								str+=l[0]+'|object|单个对象|无\n';
+							}else{
+								str+=l[0]+'|object|单个对象|'+l[2]+'\n';
+							}
+							continue;
+						}
+						switch(l[1]){
+							case 'i':
+								l[1]='int';
+								break;
+							case 's':
+								l[1]='String';
+								break;
+							case 'd':
+								l[1]='double';
+								break;
+						}
+						
+						str +='|'+l.join('|')+'|';
+						if(l.length<4){
+						str +='无|\n';
+						}else{
+							str+='\n';
+						}
+					}
+					
+				}
+				str+='\n示例json:'
+				str+='\n```json\n';
+				str+= '[\n\t{\n';
+				for(let i = 0 ;i<fanhuis.length;i++){
+					var l = fanhuis[i].split(' ');
+					if(l[1]=='s'){
+						str+='\t"'+l[0]+'":"'+l[2]+'",\n';
+					}else if(l[1]=='list'){
+						str+='\t"'+l[0]+'":[\n\t\t{\n';
+						// 处理子对象
+						i+=2;
+						while(fanhuis[i]!='---'){
+							console.log(fanhuis[i]);
+							var l = fanhuis[i].split(' ');
+							if(l[1]=='s'){
+								str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+							}else{
+								str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+							}
+							i++;
+						}
+						str = str.substr(0,str.length-2);
+						str+='\n\t\t}\n\t],\n ';
+					}else if(l[1]=='obj'){
+						str+='\t"'+l[0]+'":\t{\n';
+						// 处理子对象
+						i+=2;
+						while(fanhuis[i]!='---'){
+							console.log(fanhuis[i]);
+							var l = fanhuis[i].split(' ');
+							if(l[1]=='s'){
+								str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+							}else{
+								str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+							}
+							i++;
+						}
+						str = str.substr(0,str.length-2);
+						str+='\n\t\t},\n ';
+					}else{
+						str+='\t"'+l[0]+'":'+l[2]+',\n';
+					}
+				}
+				if(str.substr(str.length-3,1)==','){
+					str = str.substr(0,str.length-3);	
+				}else{
+					str = str.substr(0,str.length-2);	
+				}
+				str+='\n\t}\n]'
+				str+='\n```';
+				
+				$('#jieguo').val($('#jieguo').val()+'\n\n'+str);
+				var html = Mdjs.md2html($('#jieguo').val());
+				$('div.right').html(html);
+				
+				$('#jieguo').select();
+				document.execCommand("Copy"); // 执行浏览器复制命令
+			})
+		})
+		
+		$('button.shengchengjson').on('click',function(){
+			// 获取返回值
+			var fanhui = $('textarea[name=fanhui]').val();
+			var fanhuis = fanhui.split('\n');
+			var str = '{\n';
+			for(let i = 0 ;i<fanhuis.length;i++){
+				var l = fanhuis[i].split(' ');
+				if(l[1]=='s'){
+					str+='\t"'+l[0]+'":"'+l[2]+'",\n';
+				}else if(l[1]=='list'){
+					str+='\t"'+l[0]+'":[\n\t\t{\n';
+					// 处理子对象
+					i+=2;
+					while(fanhuis[i]!='---'){
+						var l = fanhuis[i].split(' ');
+						if(l[1]=='s'){
+							str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+						}else{
+							str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+						}
+						i++;
+					}
+					str = str.substr(0,str.length-2);
+					str+='\n\t\t}\n\t],\n ';
+				}else if(l[1]=='obj'){
+					str+='\t"'+l[0]+'":\t{\n';
+					// 处理子对象
+					i+=2;
+					while(fanhuis[i]!='---'){
+						var l = fanhuis[i].split(' ');
+						if(l[1]=='s'){
+							str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+						}else{
+							str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+						}
+						i++;
+					}
+					str = str.substr(0,str.length-2);
+					str+='\n\t\t},\n ';
+				}else{
+					str+='\t"'+l[0]+'":'+l[2]+',\n';
+				}
+			}
+			str = str.substr(0,str.length-2);
+			str+='\n}';
+			$('textarea.jsonstr').text(str);
+			$('div.tanchuang').show();
+		})
+		
+		$('button.shengchengjson2').on('click',function(){
+			// 获取返回值
+			var fanhui = $('textarea[name=fanhui]').val();
+			var fanhuis = fanhui.split('\n');
+			var str = '[\n{\n';
+			for(let i = 0 ;i<fanhuis.length;i++){
+				var l = fanhuis[i].split(' ');
+				if(l[1]=='s'){
+					str+='\t"'+l[0]+'":"'+l[2]+'",\n';
+				}else if(l[1]=='list'){
+					str+='\t"'+l[0]+'":[\n\t\t{\n';
+					// 处理子对象
+					i+=2;
+					while(fanhuis[i]!='---'){
+						var l = fanhuis[i].split(' ');
+						if(l[1]=='s'){
+							str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+						}else{
+							str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+						}
+						i++;
+					}
+					str = str.substr(0,str.length-2);
+					str+='\n\t\t}\n\t],\n ';
+				}else if(l[1]=='obj'){
+					str+='\t"'+l[0]+'":\t{\n';
+					// 处理子对象
+					i+=2;
+					while(fanhuis[i]!='---'){
+						var l = fanhuis[i].split(' ');
+						if(l[1]=='s'){
+							str+='\t\t"'+l[0]+'":"'+l[2]+'",\n';
+						}else{
+							str+='\t\t"'+l[0]+'":'+l[2]+',\n';
+						}
+						i++;
+					}
+					str = str.substr(0,str.length-2);
+					str+='\n\t\t},\n ';
+				}else{
+					str+='\t"'+l[0]+'":'+l[2]+',\n';
+				}
+			}
+			str = str.substr(0,str.length-2);
+			str+='\n}\n]';
+			$('textarea.jsonstr').text(str);
+			$('div.tanchuang').show();
+		})
+		
+		$('button.guanbi').on('click',()=>{
+			$('div.tanchuang').hide();
+		})
+		
+		$('button.zhuanhuan').on('click',()=>{
+			var excel = $('textarea[name=excel]').val();
+			var lines = excel.split('\n');
+			// 获取所有属性
+			var props = [];
+			for(var prop of lines[0].split('\t')){
+				props.push(prop);
+			}
+			var str = '[\n\t';
+			// 循环所有对象
+			for(let i=1;i<lines.length;i++){
+				// 拆分对象
+				var temp = lines[i].split('\t');
+				str+='{\n';
+				// 遍历所有属性
+				for(let j=0;j<props.length;j++){
+					if(j==props.length-1){
+						str += '\t\t"'+props[j]+'":"'+temp[j]+'"\n';
+						break;
+					}
+					str += '\t\t"'+props[j]+'":"'+temp[j]+'",\n';
+				}
+				str+='\t},';
+			}
+			str = str.substr(0,str.length-1);
+			str+='\n]';
+			console.log(str);
+			$('textarea[name=excel2json]').val(str);
+		})
+		
+		$('button.excel').on('click',()=>{
+			$('div.excel').show();
+		})
+		
+		$('button.guanbi2').on('click',()=>{
+			$('div.excel').hide();
+		})
+		
+		$('button.reset').on('click',()=>{
+			$('input[name=jiekouming]').val('');
+			$('input[name=lujing]').val('');
+			$('textarea[name=canshu]').val('');
+			$('textarea[name=fanhui]').val('');
+		})
+		
+		$('button.fuzhi').on('click',()=>{
+			$('textarea.jsonstr').select();
+			document.execCommand("Copy"); // 执行浏览器复制命令
+		})
+		
+		function copy(e) {
+		    let transfer = document.createElement('input');
+		    document.body.appendChild(transfer);
+		    transfer.value = e;  // 这里表示想要复制的内容
+		    transfer.focus();
+		    transfer.select();
+		    if (document.execCommand('copy')) {
+		        document.execCommand('copy');
+		    }
+		    transfer.blur();
+		    document.body.removeChild(transfer);
+		}
+	</script>
+</body>
+</html>
