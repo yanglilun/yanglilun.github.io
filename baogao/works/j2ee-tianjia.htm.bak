@@ -1,0 +1,2665 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="j2ee-tianjia.files/filelist.xml">
+<link rel=Preview href="j2ee-tianjia.files/preview.wmf">
+<link rel=Edit-Time-Data href="j2ee-tianjia.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>微软用户</o:Author>
+  <o:LastAuthor>garen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>70</o:TotalTime>
+  <o:Created>2020-05-18T19:09:00Z</o:Created>
+  <o:LastSaved>2020-05-18T19:09:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>104</o:Words>
+  <o:Characters>595</o:Characters>
+  <o:Company>微软中国</o:Company>
+  <o:Lines>4</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>698</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>800x600</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=dataStoreItem href="j2ee-tianjia.files/item0001.xml"
+target="j2ee-tianjia.files/props002.xml">
+<link rel=themeData href="j2ee-tianjia.files/themedata.thmx">
+<link rel=colorSchemeMapping href="j2ee-tianjia.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="376">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-fareast-font-family:宋体;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("j2ee-tianjia.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("j2ee-tianjia.files/header.htm") fcs;
+	mso-endnote-separator:url("j2ee-tianjia.files/header.htm") es;
+	mso-endnote-continuation-separator:url("j2ee-tianjia.files/header.htm") ecs;}
+@page WordSection1
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 2.0cm 1.0cm 2.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-header:url("j2ee-tianjia.files/header.htm") h1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 2.0cm 1.0cm 2.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-header:url("j2ee-tianjia.files/header.htm") h1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 2.0cm 1.0cm 2.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-header:url("j2ee-tianjia.files/header.htm") h1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:387655720;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2064387414 67698699 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:48.0pt;
+	mso-level-number-position:left;
+	margin-left:48.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:69.0pt;
+	mso-level-number-position:left;
+	margin-left:69.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:111.0pt;
+	mso-level-number-position:left;
+	margin-left:111.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:132.0pt;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:153.0pt;
+	mso-level-number-position:left;
+	margin-left:153.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:174.0pt;
+	mso-level-number-position:left;
+	margin-left:174.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:195.0pt;
+	mso-level-number-position:left;
+	margin-left:195.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:872117265;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1873760546 341991332 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:28.5pt;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:52.5pt;
+	text-indent:-21.0pt;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:73.5pt;
+	text-indent:-21.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:94.5pt;
+	text-indent:-21.0pt;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:115.5pt;
+	text-indent:-21.0pt;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:136.5pt;
+	text-indent:-21.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:157.5pt;
+	text-indent:-21.0pt;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:178.5pt;
+	text-indent:-21.0pt;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:199.5pt;
+	text-indent:-21.0pt;}
+@list l2
+	{mso-list-id:950893490;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-248340788 -159758046 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:28.5pt;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:52.5pt;
+	text-indent:-21.0pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:73.5pt;
+	text-indent:-21.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:94.5pt;
+	text-indent:-21.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:115.5pt;
+	text-indent:-21.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:136.5pt;
+	text-indent:-21.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:157.5pt;
+	text-indent:-21.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:178.5pt;
+	text-indent:-21.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:199.5pt;
+	text-indent:-21.0pt;}
+@list l3
+	{mso-list-id:1634477821;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-535105870 67698705 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:47.95pt;
+	text-indent:-21.0pt;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:68.95pt;
+	text-indent:-21.0pt;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:89.95pt;
+	text-indent:-21.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:110.95pt;
+	text-indent:-21.0pt;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:131.95pt;
+	text-indent:-21.0pt;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:152.95pt;
+	text-indent:-21.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:173.95pt;
+	text-indent:-21.0pt;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:194.95pt;
+	text-indent:-21.0pt;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:215.95pt;
+	text-indent:-21.0pt;}
+@list l4
+	{mso-list-id:1824663774;
+	mso-list-type:hybrid;
+	mso-list-template-ids:316456518 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:21.0pt;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:63.0pt;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:84.0pt;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:105.0pt;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:126.0pt;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:147.0pt;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:168.0pt;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:189.0pt;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:1982879331;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-786639642 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:47.95pt;
+	text-indent:-21.0pt;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:68.95pt;
+	text-indent:-21.0pt;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:89.95pt;
+	text-indent:-21.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:110.95pt;
+	text-indent:-21.0pt;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:131.95pt;
+	text-indent:-21.0pt;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:152.95pt;
+	text-indent:-21.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:173.95pt;
+	text-indent:-21.0pt;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:194.95pt;
+	text-indent:-21.0pt;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:215.95pt;
+	text-indent:-21.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+table.MsoTableGrid
+	{mso-style-name:网格型;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:24.0pt'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:234pt;
+ height:60pt'>
+ <v:imagedata src="j2ee-tianjia.files/image001.png" o:title="logo" cropright="27649f"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=312 height=80
+src="j2ee-tianjia.files/image002.gif" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:21.0pt;text-align:center;
+text-indent:-21.0pt'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:45.0pt;font-family:黑体;mso-hansi-font-family:"Times New Roman"'>实
+<span style='mso-spacerun:yes'>&nbsp;</span><span class=GramE>验</span><span
+lang=EN-US><span style='mso-spacerun:yes'>&nbsp; </span></span>报 <span
+style='mso-spacerun:yes'>&nbsp;</span>告<span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%'><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>学院：<u>计算机科学学院</u></span><span
+lang=EN-US style='font-size:16.0pt;line-height:200%'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>专业：计算机应用技术</span><span
+style='font-size:16.0pt;line-height:200%'> <span lang=EN-US>2019</span></span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>年</span><span
+lang=EN-US style='font-size:16.0pt;line-height:200%'>9</span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>月</span><span
+style='font-size:16.0pt;line-height:200%'> <span lang=EN-US>24 </span></span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>日</span><span
+lang=EN-US style='font-size:16.0pt;line-height:200%'><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:30.65pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>姓</span><span
+  lang=EN-US style='font-size:16.0pt'><span style='mso-spacerun:yes'>&nbsp;
+  </span></span><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>名</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:152.95pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span class=GramE><span style='font-size:16.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>杨立伦</span></span><span lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:77.9pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>学</span><span
+  lang=EN-US style='font-size:16.0pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span></span><span style='font-size:
+  16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>号</span><span lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=198 colspan=3 valign=top style='width:148.7pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>17203010217<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:22.85pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>班</span><span
+  lang=EN-US style='font-size:16.0pt'><span style='mso-spacerun:yes'>&nbsp;
+  </span></span><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>级</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:152.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal><span class=GramE><span style='font-size:16.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>计应</span><span lang=EN-US style='font-size:16.0pt'>2</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>班</span></span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=104 valign=top style='width:77.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>指导老师</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=198 colspan=3 style='width:148.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>孙琴</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:26.85pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.85pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>课程名称</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=366 colspan=3 valign=top style='width:274.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.85pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>J2EE</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>程序设计</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=54 rowspan=2 style='width:40.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>成</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绩</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=86 rowspan=2 valign=top style='width:64.55pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.85pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:23.75pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:23.75pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>实验名称</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=366 colspan=3 valign=top style='width:274.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:23.75pt'>
+  <p class=MsoNormal style='tab-stops:68.25pt'><span style='font-size:16.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>实现从</span><span lang=EN-US style='font-size:16.0pt'>JSP</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>页面填写信息存到数据库</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:89.15pt'>
+  <td width=621 colspan=6 valign=top style='width:465.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:89.15pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>1</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．实验目的</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(1).</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>掌握</span><span lang=EN-US
+  style='font-size:14.0pt'>JSP</span><span style='font-size:14.0pt;font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>页面编写</span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(2).</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>掌握</span><span lang=EN-US
+  style='font-size:14.0pt'>Servlet</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>控制逻辑编写</span><span lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(3).</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>掌握</span><span lang=EN-US
+  style='font-size:14.0pt'>JDBC</span><span style='font-size:14.0pt;font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>数据库连接与操作</span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:109.15pt'>
+  <td width=621 colspan=6 valign=top style='width:465.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:109.15pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>2</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．实验内容</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(1)</span><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:PT-BR'> </span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-ansi-language:PT-BR'>完整的</span><span
+  lang=EN-US style='font-size:14.0pt'>JSP</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>页面编写</span><span lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(2) </span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>通过</span><span lang=EN-US
+  style='font-size:14.0pt'>Servlet</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>完成逻辑控制，实现从</span><span lang=EN-US style='font-size:14.0pt'>JSP</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>页面填写信息存到数据库</span><span lang=EN-US
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>(3) </span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>页面的内容丰富度（如信息量、</span><span
+  lang=EN-US style='font-size:14.0pt'>html</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>页面设计）作为附加分项</span><span lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:109.1pt'>
+  <td width=621 colspan=6 valign=top style='width:465.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:109.1pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>3</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．实验环境</span><span lang=EN-US
+  style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>PC</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>微机、</span><span lang=EN-US
+  style='font-size:14.0pt'>Windows</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>操作系统</span><span lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>JDK 1.8<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>Eclipse + tomcat<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt'>MySQL 5.1<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=115 style='border:none'></td>
+  <td width=204 style='border:none'></td>
+  <td width=104 style='border:none'></td>
+  <td width=58 style='border:none'></td>
+  <td width=54 style='border:none'></td>
+  <td width=86 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+<span lang=EN-US style='font-size:16.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection2 style='layout-grid:15.6pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  height:176.05pt'>
+  <td width=650 valign=top style='width:487.35pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:176.05pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>4</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．实验方法和步骤（含设计）</span><span
+  lang=EN-US style='font-size:16.0pt;color:red'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>创建简历项目</span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="图片_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:185.25pt;
+   height:118.5pt;visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image003.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=247 height=158
+  src="j2ee-tianjia.files/image004.jpg" v:shapes="图片_x0020_1"><![endif]></span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>创建数据库</span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:333pt;height:3in;
+   visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image005.png" o:title="" cropbottom="16239f"/>
+  </v:shape><![endif]--><![if !vml]><img width=444 height=288
+  src="j2ee-tianjia.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+   coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s1029" type="#_x0000_t202" style='position:absolute;
+   left:0;text-align:left;margin-left:189.45pt;margin-top:5.8pt;width:288.85pt;
+   height:298.05pt;z-index:251655680'/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:absolute;z-index:251655680;left:0px;
+  margin-left:251px;margin-top:7px;width:391px;height:403px'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=391 height=403 bgcolor=white style='border:.75pt solid black;
+    vertical-align:top;background:white'><![endif]><![if !mso]><span
+    style='position:absolute;mso-ignore:vglayout;left:0pt;z-index:251655680'>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div v:shape="_x0000_s1029" style='padding:4.35pt 7.95pt 4.35pt 7.95pt'
+      class=shape>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span
+      style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+      "Times New Roman";mso-no-proof:yes'>编写简历</span><span lang=EN-US
+      style='mso-no-proof:yes'>DAO</span><span style='font-family:宋体;
+      mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+      mso-no-proof:yes'>，添加功能</span><span lang=EN-US style='mso-no-proof:yes'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>public</span></b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> </span><span
+      class=SpellE><b><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#7F0055;mso-font-kerning:0pt'>boolean</span></b></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> <span class=GramE>insert(</span>Resume </span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>) {</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>sql</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;insert
+      into <span class=GramE>resume(</span><span class=SpellE>name,sex,sid,pic,birthday</span>,&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#2A00FF;mso-font-kerning:0pt'>&quot;<span class=SpellE><span
+      class=GramE>apptime,city</span>,subject,grade,year,clevel,room,qq,idcard</span>,&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#2A00FF;mso-font-kerning:0pt'>&quot;<span class=SpellE><span
+      class=GramE>tel,deptname</span>,hobby,word,other,flag,groups</span>)
+      &quot;</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#2A00FF;mso-font-kerning:0pt'>&quot;values<span class=GramE>(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?</span>)&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>;</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Connection
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>conn</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = <span class=SpellE>DBUtils.<i>getconn</i></span>();</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>int</span></b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> </span><span
+      class=SpellE><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>i</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = <span class=SpellE>DBUtils.<i>executeUpdate</i></span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>conn</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>, </span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>sql</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>,</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getName</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getSex</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getSid</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=GramE><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>r</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>.getPic</span></span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getBirthday(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getApptime(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getCity(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getSubject(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=GramE><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>r</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>.getGrade</span></span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getYear(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getClevel(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getRoom(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getQq(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getIdcard(),</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getTel</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getDeptname</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getHobby</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getWord</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getOther</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getFlag</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(),</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.getGroups</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>());</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>return</span></b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> </span><span
+      class=SpellE><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>i</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>&gt;0;</span><span lang=EN-US style='font-size:9.0pt;font-family:
+      "Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal style='layout-grid-mode:char;mso-layout-grid-align:
+      none'><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:black;mso-font-kerning:0pt'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>}</span><span
+      lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:11.0pt'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+   </tr>
+  </table>
+  </span><![endif]><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-no-proof:yes'>根据数据库编写</span><span
+  lang=EN-US style='mso-no-proof:yes'>javabean</span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-no-proof:yes'>，</span><span lang=EN-US style='mso-no-proof:yes'>entity</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-no-proof:yes'>实体类</span><span lang=EN-US
+  style='mso-no-proof:yes'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:134.25pt;height:285pt;
+   visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image007.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=179 height=380
+  src="j2ee-tianjia.files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></span><span
+  lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<span lang=EN-US style='font-size:16.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection3 style='layout-grid:15.6pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=650 valign=top style='width:487.35pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1030" type="#_x0000_t202"
+   style='position:absolute;left:0;text-align:left;margin-left:.25pt;
+   margin-top:7.3pt;width:241.9pt;height:732.55pt;z-index:251656704'/><v:shape
+   id="图片_x0020_1" o:spid="_x0000_s1032" type="#_x0000_t75" style='position:absolute;
+   left:0;text-align:left;margin-left:246.3pt;margin-top:386.5pt;width:226.6pt;
+   height:269.6pt;z-index:251658752;visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image009.png" o:title=""/>
+  </v:shape><v:shape id="_x0000_s1033" type="#_x0000_t202" style='position:absolute;
+   left:0;text-align:left;margin-left:250.8pt;margin-top:363.9pt;width:167.25pt;
+   height:23.5pt;z-index:251659776'>
+   <v:textbox>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span lang=EN-US>JSP</span><span style='font-family:
+      宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>表单页面</span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1031" type="#_x0000_t202" style='position:absolute;
+   left:0;text-align:left;margin-left:250.8pt;margin-top:5.8pt;width:225.75pt;
+   height:350.95pt;z-index:251657728'/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:relative;z-index:251656704;left:-1px;
+  top:7px;width:641px;height:992px'>
+  <table cellpadding=0 cellspacing=0 align=left>
+   <tr>
+    <td width=0 height=0></td>
+    <td width=329></td>
+    <td width=2></td>
+    <td width=3></td>
+    <td width=299></td>
+    <td width=8></td>
+   </tr>
+   <tr>
+    <td height=2></td>
+    <td colspan=3></td>
+    <td colspan=2 rowspan=2 width=307 height=474 bgcolor=white
+    style='border:.75pt solid black;vertical-align:top;background:white'><![endif]><![if !mso]><span
+    style='position:absolute;mso-ignore:vglayout;left:0pt;z-index:251657728'>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div v:shape="_x0000_s1031" style='padding:4.35pt 7.95pt 4.35pt 7.95pt'
+      class=shape>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:11.0pt'>Servlet</span><span
+      style='font-size:11.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman"'>接口，调用</span><span lang=EN-US
+      style='font-size:11.0pt'>service</span><span style='font-size:11.0pt;
+      font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+      "Times New Roman"'>的添加方法</span><span lang=EN-US style='font-size:11.0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#646464;mso-font-kerning:0pt'>@<span
+      class=SpellE>WebServlet</span></span><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>(</span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>&quot;/resume.do&quot;</span><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>)</span><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#646464;mso-font-kerning:0pt'>@<span
+      class=SpellE>MultipartConfig</span></span><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><b><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#7F0055;mso-font-kerning:0pt'>public</span></b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> </span><b><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#7F0055;mso-font-kerning:0pt'>class</span></b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> <span class=SpellE>ResumeServlet</span> </span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>extends</span></b><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> <span class=SpellE>BaseServlet</span> {</span><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>private</span></b><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> </span><b><span lang=EN-US style='font-size:10.0pt;font-family:
+      "Courier New";color:#7F0055;mso-font-kerning:0pt'>static</span></b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> </span><b><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#7F0055;mso-font-kerning:0pt'>final</span></b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> </span><b><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#7F0055;mso-font-kerning:0pt'>long</span></b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> </span><span class=SpellE><b><i><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";color:#0000C0;
+      mso-font-kerning:0pt'>serialVersionUID</span></i></b></span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = 1L;</span><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#3F5FBF;
+      mso-font-kerning:0pt'>/**</span><span style='font-size:10.0pt;font-family:
+      宋体;mso-ascii-font-family:"Courier New";mso-hansi-font-family:"Courier New";
+      mso-bidi-font-family:"Courier New";color:#3F5FBF;mso-font-kerning:0pt'>提交简历</span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>public</span></b><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> </span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>void</span></b><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> <span
+      class=GramE>send(</span><span class=SpellE>HttpServletRequest</span> </span><span
+      class=SpellE><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>request</span><span lang=EN-US
+      style='font-size:10.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>,HttpServletResponse</span></span><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> </span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>response</span><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>) </span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>throws</span></b><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> <span
+      class=SpellE>ParseException</span>, <span class=SpellE>IOException</span>,
+      <span class=SpellE>ServletException</span>, <span class=SpellE>SQLException</span>{</span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;mso-layout-grid-align:
+      none;text-autospace:none'><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'><span
+      style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>new</span></b><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> <span
+      class=SpellE><span class=GramE>ResumeService</span></span><span
+      class=GramE>(</span>).insert(</span><span lang=EN-US style='font-size:
+      10.0pt;font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>request</span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>, </span><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>response</span><span
+      lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:10.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:
+      "Courier New";color:black;mso-font-kerning:0pt'><span style='mso-tab-count:
+      1'>&nbsp;&nbsp;&nbsp; </span>}</span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+   </tr>
+   <tr>
+    <td height=472></td>
+    <td rowspan=4 width=329 height=983 bgcolor=white style='border:.75pt solid black;
+    vertical-align:top;background:white'><![endif]><![if !mso]><span
+    style='position:absolute;mso-ignore:vglayout;left:0pt;z-index:251656704'>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div v:shape="_x0000_s1030" style='padding:4.35pt 7.95pt 4.35pt 7.95pt'
+      class=shape>
+      <p class=MsoNormal style='layout-grid-mode:char'><span style='font-size:
+      11.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+      "Times New Roman"'>编写</span><span lang=EN-US style='font-size:11.0pt'>service</span><span
+      style='font-size:11.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman"'>，从前端获取数据存入数据库</span><span
+      lang=EN-US style='font-size:11.0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>String </span><span class=SpellE><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>sid</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span class=SpellE><span class=GramE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;<span
+      class=SpellE>sid</span>&quot;</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Resume
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>r</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><b><span lang=EN-US style='font-size:9.0pt;font-family:
+      "Courier New";color:#7F0055;mso-font-kerning:0pt'>new</span></b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> <span class=GramE>Resume(</span>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>name</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;name&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>sex</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;sex&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>birth</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;birthday&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>city</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;city&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>grade</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;grade&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>subject</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;subject&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>year</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;year&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>clevel</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span class=SpellE><span class=GramE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;<span
+      class=SpellE>clevel</span>&quot;</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>room</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;room&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>qq</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span class=SpellE><span class=GramE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;<span
+      class=SpellE>qq</span>&quot;</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>tel</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span class=SpellE><span class=GramE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;<span
+      class=SpellE>tel</span>&quot;</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>deptname</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><span class=SpellE><span class=GramE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;<span
+      class=SpellE>deptname</span>&quot;</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>groups</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;groups&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>hobby</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;hobby&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>word</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = </span><span class=SpellE><span class=GramE><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>request</span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>.getParameter</span></span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>(</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;word&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=SpellE>System.<b><i><span style='color:#0000C0'>out</span></i></b>.println</span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>&quot;</span><span style='font-size:9.0pt;
+      font-family:宋体;mso-ascii-font-family:"Courier New";mso-hansi-font-family:
+      "Courier New";mso-bidi-font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>学院</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>+</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>grade</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=SpellE>System.<b><i><span style='color:#0000C0'>out</span></i></b>.println</span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>&quot;</span><span style='font-size:9.0pt;
+      font-family:宋体;mso-ascii-font-family:"Courier New";mso-hansi-font-family:
+      "Courier New";mso-bidi-font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>年级</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>+</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>year</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=SpellE>SimpleDateFormat</span> </span><span class=SpellE><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>fmt</span></span><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> = </span><b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>new</span></b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'> <span
+      class=SpellE>SimpleDateFormat</span>(</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>&quot;<span class=SpellE>yyyy</span>-MM-dd&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#7F0055;
+      mso-font-kerning:0pt'>if</span></b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:black;mso-font-kerning:0pt'>(</span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>birth</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.equals</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#2A00FF;mso-font-kerning:0pt'>&quot;&quot;</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>)){</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=SpellE>System.<b><i><span style='color:#0000C0'>out</span></i></b>.println</span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>&quot;birth</span><span style='font-size:9.0pt;
+      font-family:宋体;mso-ascii-font-family:"Courier New";mso-hansi-font-family:
+      "Courier New";mso-bidi-font-family:"Courier New";color:#2A00FF;
+      mso-font-kerning:0pt'>为空</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#2A00FF;mso-font-kerning:0pt'>&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setBirthday</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><b><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#7F0055;mso-font-kerning:0pt'>new</span></b><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> Date());</span><span lang=EN-US style='font-size:9.0pt;font-family:
+      "Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=GramE>}<b><span style='color:#7F0055'>else</span></b></span>{</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setBirthday</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>fmt</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.parse</span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>birth</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>));</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Date
+      </span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>apptime</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = </span><b><span lang=EN-US style='font-size:
+      9.0pt;font-family:"Courier New";color:#7F0055;mso-font-kerning:0pt'>new</span></b><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> <span class=GramE>Date(</span>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setSid</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>sid</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setName</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>name</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setSex</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>sex</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setCity</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>city</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setPic</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>pic</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setGrade</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><b><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#7F0055;mso-font-kerning:0pt'>new</span></b><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> <span class=SpellE>GradeUtil</span>().<span class=SpellE>getGradeById</span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>grade</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>));</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setSubject</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>subject</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setYear</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>year</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setApptime</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>apptime</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setClevel</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>clevel</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setRoom</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>room</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setQq</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>qq</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setTel</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>tel</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setDeptname</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span class=SpellE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>deptname</span></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setGroups</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>groups</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setHobby</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>hobby</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>r</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.setWord</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>word</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>);</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Connection
+      </span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#6A3E3E;mso-font-kerning:0pt'>conn</span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'> = <span class=SpellE>DBUtils.<i>getconn</i></span>();</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><b><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#7F0055;mso-font-kerning:0pt'>boolean</span></b></span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> </span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>f</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'> = <span class=SpellE>DAOfactory.<i>newFactory</i></span>(<span
+      class=GramE>).<span class=SpellE>getResumeDAO</span></span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>conn</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>).insert(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>r</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>conn</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.close</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>();</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      mso-font-kerning:0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal align=left style='text-align:left;layout-grid-mode:
+      char;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+      class=SpellE>System.<b><i><span style='color:#0000C0'>out</span></i></b>.println</span>(</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:#6A3E3E;
+      mso-font-kerning:0pt'>f</span><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:black;mso-font-kerning:0pt'>);</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";mso-font-kerning:
+      0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal style='layout-grid-mode:char'><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><span
+      style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+      class=SpellE><span class=GramE><span lang=EN-US style='font-size:9.0pt;
+      font-family:"Courier New";color:#6A3E3E;mso-font-kerning:0pt'>response</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>.sendRedirect</span></span></span><span lang=EN-US
+      style='font-size:9.0pt;font-family:"Courier New";color:black;mso-font-kerning:
+      0pt'>(</span><span lang=EN-US style='font-size:9.0pt;font-family:"Courier New";
+      color:#2A00FF;mso-font-kerning:0pt'>&quot;success.html&quot;</span><span
+      lang=EN-US style='font-size:9.0pt;font-family:"Courier New";color:black;
+      mso-font-kerning:0pt'>);</span><span lang=EN-US style='font-size:14.0pt'><o:p></o:p></span></p>
+      <p class=MsoNormal style='layout-grid-mode:char'><span lang=EN-US
+      style='font-size:10.0pt;mso-bidi-font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+   </tr>
+   <tr>
+    <td height=3></td>
+   </tr>
+   <tr>
+    <td height=393></td>
+    <td></td>
+    <td colspan=2 align=left valign=top><img width=302 height=393
+    src="j2ee-tianjia.files/image010.gif" v:shapes="图片_x0020_1 _x0000_s1033"></td>
+   </tr>
+   <tr>
+    <td height=115></td>
+   </tr>
+  </table>
+  </span><![endif]><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <br style='mso-ignore:vglayout' clear=ALL>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>5</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．程序及测试结果（包括源代码和结果截图）</span><span
+  lang=EN-US style='font-size:16.0pt;color:red'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1029" type="#_x0000_t75" style='width:175.5pt;height:172.5pt;
+   visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image011.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=234 height=230
+  src="j2ee-tianjia.files/image012.jpg" v:shapes="_x0000_i1029"><![endif]></span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1030" type="#_x0000_t75" style='width:371.25pt;height:135.75pt;
+   visibility:visible'>
+   <v:imagedata src="j2ee-tianjia.files/image013.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=495 height=181
+  src="j2ee-tianjia.files/image014.jpg" v:shapes="_x0000_i1030"><![endif]></span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=650 valign=top style='width:487.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>6</span><span
+  style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>．实验分析与体会（实验过程中遇到的问题与解决方案）</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>学习了</span><span
+  lang=EN-US style='font-size:14.0pt'>J2ee</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>之后，我对网站的看法有的后台的视角。</span><span lang=EN-US
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>数据从前端页面，通过表单，</span><span
+  lang=EN-US style='font-size:14.0pt'>AJAX</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>请求的方式传给后台的</span><span lang=EN-US style='font-size:14.0pt'>servlet</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>接口，</span><span lang=EN-US
+  style='font-size:14.0pt'>servlet</span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>通过调用</span><span lang=EN-US style='font-size:14.0pt'>servlet</span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>或者</span><span lang=EN-US
+  style='font-size:14.0pt'>DAO</span><span style='font-size:14.0pt;font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>数据访问对象来控制进行对数据库的增删改查，进行一系列的操作。组成整个网页的功能构成实验日期</span><span
+  style='font-size:14.0pt'> </span><span style='font-size:14.0pt;font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><u><span
+  style='font-size:14.0pt'> <span lang=EN-US>2019<span
+  style='mso-spacerun:yes'>&nbsp; </span></span></span></u><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>年</span><u><span style='font-size:
+  14.0pt'> <span style='mso-spacerun:yes'>&nbsp;</span></span></u><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>月</span><u><span style='font-size:
+  14.0pt'> <span style='mso-spacerun:yes'>&nbsp;</span></span></u><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>日</span><span lang=EN-US
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=650 valign=top style='width:487.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>教师评语</span><span
+  lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='text-indent:154.0pt;mso-char-indent-count:11.0'><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>签名：</span><span lang=EN-US
+  style='font-size:14.0pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+  style='font-size:14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>年</span><span lang=EN-US
+  style='font-size:14.0pt'><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span style='font-size:
+  14.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>月</span><span lang=EN-US style='font-size:14.0pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:14.0pt;
+  font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>日</span><span lang=EN-US style='font-size:16.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:1.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	$(()=>{
+		ck('button.login',()=>{
+			var f = $('#f1').serialize()
+			crossPost('insertUser',f,(data)=>{
+				ifDataAlert(data,'注册成功！','注册失败');
+			})
+		})
+	})
+</script>

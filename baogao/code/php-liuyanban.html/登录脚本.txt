@@ -1,0 +1,30 @@
+
+<script type="text/javascript">
+	$(()=>{
+		
+		ck('#code',function(){
+			$.post('http://jwxt.wdu.edu.cn/CheckCode.aspx')
+			$(this).attr('src','http://jwxt.wdu.edu.cn/CheckCode.aspx')
+		})
+		
+		ck('button.login',()=>{
+			var f = $('#f1').serialize()
+			console.log(f);
+			crossPost('login',f,(data)=>{
+				if(data == '' || data == null){
+					alert('登录失败')
+				}else{
+					console.log(data);
+					setSessionCross('uid',data.uid,()=>{
+						setSessionCross('uname',data.uname,()=>{
+							window.location='liuyanban.html';
+						})
+					})
+				}
+			})
+		})
+	})
+</script>
+
+
+

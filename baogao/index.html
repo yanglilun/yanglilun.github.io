@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/reset.css"/>
+	<title></title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			background-color: lightskyblue;
+		}
+		div.root{
+			width: 100%;
+			height: 100%;
+			overflow-y: hidden;
+		}
+		div.nav{
+			width: 50%;
+			height: 100%;
+			padding: 50px;
+			float: left;
+		}
+		div.nav>img{
+			width: 70%;
+			margin: 0 auto 0 auto;
+		}
+		div.nav:hover{
+			background-color: orange;
+		}
+		div.nav>p{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		div.head{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="root">
+		<div class="head" style="border-bottom: 1px solid black;">
+			<h2 style="text-align: center;line-height: 80px;">请选择你的设备类型</h2>
+		</div>
+		<div onclick="window.location='diannao.html'" class="nav" style="border-right: 1px solid black;">
+			<img src="https://ae01.alicdn.com/kf/Hfe6c85d5917a447697fb50dd84713932I.jpg" >
+			<p>电脑界面</p>
+		</div>
+		<div onclick="window.location='shouji.html'" class="nav">
+			<img src="https://ae01.alicdn.com/kf/H79666092a71149d6b07010b9e2cfc435E.jpg" >
+			<p>手机界面</p>
+		</div>
+	</div>
+</body>
+</html>

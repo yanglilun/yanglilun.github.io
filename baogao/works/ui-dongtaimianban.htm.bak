@@ -1,0 +1,393 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title> </title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 2.0cm 1.0cm 2.0cm;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='margin-left:21.0pt;text-indent:-21.0pt'><b><span
+lang=EN-US style='font-size:24.0pt'><img width=312 height=80
+src="ui-dongtaimianban.files/image001.gif"></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:21.0pt;text-align:center;
+text-indent:-21.0pt'><b><span style='font-size:45.0pt;font-family:黑体'>实 &nbsp;验<span
+lang=EN-US>&nbsp; </span>报 &nbsp;告</span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:21.0pt;text-align:center;
+text-indent:-21.0pt'><b><span lang=EN-US style='font-size:4.0pt;font-family:
+黑体'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:16.0pt;
+line-height:200%;font-family:宋体'>学院：</span><u><span style='font-size:16.0pt;
+line-height:200%'> </span></u><u><span style='font-size:16.0pt;line-height:
+200%;font-family:宋体'>计算科学学院</span></u><u><span style='font-size:16.0pt;
+line-height:200%'> </span></u><span style='font-size:16.0pt;line-height:200%;
+font-family:宋体'>专业：</span><u><span style='font-size:16.0pt;line-height:200%'> </span></u><u><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体'>计算机应用技术</span></u><u><span
+style='font-size:16.0pt;line-height:200%'> </span></u><span lang=EN-US
+style='font-size:16.0pt;line-height:200%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体'>年</span><span
+style='font-size:16.0pt;line-height:200%'> <span lang=EN-US>6</span></span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体'>月</span><span
+lang=EN-US style='font-size:16.0pt;line-height:200%'>6 </span><span
+style='font-size:16.0pt;line-height:200%;font-family:宋体'>日</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:30.65pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>姓</span><span
+  lang=EN-US style='font-size:16.0pt'>&nbsp; </span><span style='font-size:
+  16.0pt;font-family:宋体'>名</span></p>
+  </td>
+  <td width=204 valign=top style='width:152.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>杨立伦</span></p>
+  </td>
+  <td width=104 valign=top style='width:77.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>学</span><span
+  lang=EN-US style='font-size:16.0pt'>&nbsp;&nbsp; </span><span
+  style='font-size:16.0pt;font-family:宋体'>号</span></p>
+  </td>
+  <td width=212 colspan=3 valign=top style='width:158.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:30.65pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>17203010217</span></p>
+  </td>
+ </tr>
+ <tr style='height:29.65pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>班</span><span
+  lang=EN-US style='font-size:16.0pt'>&nbsp; </span><span style='font-size:
+  16.0pt;font-family:宋体'>级</span></p>
+  </td>
+  <td width=204 valign=top style='width:152.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>计应</span><span
+  lang=EN-US style='font-size:16.0pt'>2</span><span style='font-size:16.0pt;
+  font-family:宋体'>班</span><span style='font-size:16.0pt'> </span></p>
+  </td>
+  <td width=104 valign=top style='width:77.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>指导老师</span></p>
+  </td>
+  <td width=212 colspan=3 valign=top style='width:158.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>程彬</span></p>
+  </td>
+ </tr>
+ <tr style='height:37.15pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:37.15pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>课程名称</span></p>
+  </td>
+  <td width=366 colspan=3 valign=top style='width:274.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.15pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>UI</span><span
+  style='font-size:16.0pt;font-family:宋体'>设计与应用实践</span></p>
+  </td>
+  <td width=54 rowspan=2 style='width:40.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:16.0pt;font-family:宋体'>成</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:16.0pt;font-family:宋体'>绩</span></p>
+  </td>
+  <td width=99 rowspan=2 valign=top style='width:74.55pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:37.15pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:42.45pt'>
+  <td width=115 valign=top style='width:86.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:42.45pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>实验名称</span></p>
+  </td>
+  <td width=366 colspan=3 valign=top style='width:274.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.45pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>动态面板：自动图片切换</span><span
+  style='font-size:16.0pt'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:89.15pt'>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:89.15pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>1</span><span
+  style='font-size:16.0pt;font-family:宋体'>．实验目的</span></p>
+  <p class=MsoNormal style='text-indent:32.0pt'><span style='font-size:16.0pt;
+  font-family:宋体'>掌握在</span><span lang=EN-US style='font-size:16.0pt'>Axure RP
+  8</span><span style='font-size:16.0pt;font-family:宋体'>环境下制作</span><span
+  lang=EN-US style='font-size:16.0pt'>UI</span><span style='font-size:16.0pt;
+  font-family:宋体'>界面的步骤，会使用各类元件，掌握快速预览查看原型的方法，根据预览的结果，在</span><span lang=EN-US
+  style='font-size:16.0pt'>Axure RP 8</span><span style='font-size:16.0pt;
+  font-family:宋体'>中不断修改和完善，得到最终的结果。</span></p>
+  <p class=MsoNormal style='text-indent:24.0pt'><span lang=EN-US
+  style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:131.4pt'>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:131.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>2</span><span
+  style='font-size:16.0pt;font-family:宋体'>．实验内容</span></p>
+  <p class=MsoNormal style='text-indent:32.0pt'><span style='font-size:16.0pt;
+  font-family:宋体'>固定区域循环播放一组图片（幻灯片效果），图片下方的圆形分页标签随着播放不同的图片，而对应改变样式；</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>3</span><span
+  style='font-size:16.0pt;font-family:宋体'>．实验环境</span></p>
+  <p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US
+  style='font-size:16.0pt'>Windows 10 64</span><span style='font-size:16.0pt;
+  font-family:宋体'>位</span><span style='font-size:16.0pt'> </span><span
+  style='font-size:16.0pt;font-family:宋体'>专业版</span></p>
+  <p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US
+  style='font-size:16.0pt'>axure rp8</span></p>
+  <p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US
+  style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-indent:31.5pt'><span lang=EN-US
+  style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>4</span><span
+  style='font-size:16.0pt;font-family:宋体'>．实验方法和步骤（含设计）</span></p>
+  <p class=MsoNormal><span lang=EN-US>1.</span><span style='font-family:宋体'>新建一个矩形，转换为动态面板</span>
+  <span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='font-family:宋体'>添加</span><span lang=EN-US>5</span><span
+  style='font-family:宋体'>个面板</span></p>
+  <p class=MsoNormal>
+  <table cellpadding=0 cellspacing=0 align=left>
+   <tr>
+    <td width=0 height=11></td>
+    <td width=330></td>
+    <td width=10></td>
+    <td width=265></td>
+   </tr>
+   <tr>
+    <td height=1></td>
+    <td colspan=2></td>
+    <td rowspan=2 align=left valign=top><img width=265 height=250
+    src="ui-dongtaimianban.files/image002.jpg"></td>
+   </tr>
+   <tr>
+    <td height=249></td>
+    <td rowspan=2 align=left valign=top><img width=330 height=256
+    src="ui-dongtaimianban.files/image003.jpg"></td>
+   </tr>
+   <tr>
+    <td height=7></td>
+   </tr>
+  </table>
+  <span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <br clear=ALL>
+  <p class=MsoNormal><span style='font-family:宋体'>在每个面板矩形中放入图片</span></p>
+  <p class=MsoNormal>
+  <table cellpadding=0 cellspacing=0 align=left>
+   <tr>
+    <td width=0 height=9></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width=227 height=244 src="ui-dongtaimianban.files/image004.jpg"></td>
+   </tr>
+  </table>
+  <span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <br clear=ALL>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+  <p class=MsoNormal><span style='font-family:宋体'>在主页面</span><span lang=EN-US>index</span><span
+  style='font-family:宋体'>中，图片下面水平分布五个圆形，并标号</span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=542 height=104 id="图片 1"
+  src="ui-dongtaimianban.files/image005.jpg"></span></p>
+  <p class=MsoNormal><span style='font-family:宋体'>给他们五个圆分钟</span> <span
+  lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='font-family:宋体'>设置第一个球默认选中</span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=267 height=57
+  src="ui-dongtaimianban.files/image006.jpg">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<img
+  width=126 height=40 src="ui-dongtaimianban.files/image007.jpg"></span></p>
+  <p class=MsoNormal><span style='font-family:宋体'>设置动态面板载入时循环下一个</span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=228 height=114
+  src="ui-dongtaimianban.files/image008.jpg"></span></p>
+  <p class=MsoNormal><span style='font-family:宋体'>当改变状态的时候，设置选中相应的圆圈</span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=179 height=262
+  src="ui-dongtaimianban.files/image009.jpg"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>5</span><span
+  style='font-size:16.0pt;font-family:宋体'>．程序及测试结果</span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=302 height=174
+  src="ui-dongtaimianban.files/image010.jpg">&nbsp;<img width=296 height=177
+  src="ui-dongtaimianban.files/image011.jpg"></span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=293 height=183
+  src="ui-dongtaimianban.files/image012.jpg">&nbsp;<img width=296 height=181
+  src="ui-dongtaimianban.files/image013.jpg"></span></p>
+  <p class=MsoNormal><span lang=EN-US><img width=307 height=183
+  src="ui-dongtaimianban.files/image014.jpg"></span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:497.8pt'>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:497.8pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>6</span><span
+  style='font-size:16.0pt;font-family:宋体'>．实验分析与体会</span></p>
+  <p class=MsoNormal style='text-indent:32.0pt'><span style='font-size:16.0pt;
+  font-family:宋体'>动态面板的滑动效果</span></p>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>与显示隐藏效果不同，动态面板的滑动效果一般是通过其他交互事件来激发的，可能是点击某个按钮，也可能是页面加载时实现。比如：</span></p>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>情景</span><span
+  lang=EN-US style='font-size:16.0pt'>A</span><span style='font-size:16.0pt;
+  font-family:宋体'>：网站上的一些滚动文字的效果。</span></p>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>情景</span><span
+  lang=EN-US style='font-size:16.0pt'>B</span><span style='font-size:16.0pt;
+  font-family:宋体'>：点击登录按钮，登录面板的弹出收起效果。</span></p>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>一般滑动效果都需要有复杂的激发过程，比如通过页面的</span><span
+  lang=EN-US style='font-size:16.0pt'>onpageload</span><span style='font-size:
+  16.0pt;font-family:宋体'>事件。现在，在此不做过多讲解，以后通过案例来进行介绍，则更易懂一些。</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:14.0pt;font-family:宋体'>实验日期</span><span style='font-size:
+  14.0pt'> </span><span style='font-size:14.0pt;font-family:宋体'>：</span><u><span
+  lang=EN-US style='font-size:14.0pt'>&nbsp; 2019 &nbsp;</span></u><span
+  style='font-size:14.0pt;font-family:宋体'>年</span><u><span style='font-size:
+  14.0pt'> &nbsp;<span lang=EN-US>6 &nbsp;</span></span></u><span
+  style='font-size:14.0pt;font-family:宋体'>月</span><u><span lang=EN-US
+  style='font-size:14.0pt'>&nbsp; 6&nbsp; </span></u><span style='font-size:
+  14.0pt;font-family:宋体'>日</span></p>
+  </td>
+ </tr>
+ <tr style='height:217.5pt'>
+  <td width=635 colspan=6 valign=top style='width:475.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:217.5pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:宋体'>教师评语</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-indent:160.0pt'><span lang=EN-US
+  style='font-size:16.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-indent:154.0pt'><span style='font-size:14.0pt;
+  font-family:宋体'>签名：</span><span lang=EN-US style='font-size:14.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='font-size:14.0pt;font-family:宋体'>年</span><span lang=EN-US
+  style='font-size:14.0pt'>&nbsp;&nbsp; &nbsp;&nbsp;</span><span
+  style='font-size:14.0pt;font-family:宋体'>月</span><span lang=EN-US
+  style='font-size:14.0pt'>&nbsp;&nbsp; &nbsp;</span><span style='font-size:
+  14.0pt;font-family:宋体'>日</span></p>
+  </td>
+ </tr>
+ <tr height=0>
+  <td width=115 style='border:none'></td>
+  <td width=204 style='border:none'></td>
+  <td width=104 style='border:none'></td>
+  <td width=58 style='border:none'></td>
+  <td width=54 style='border:none'></td>
+  <td width=99 style='border:none'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:1.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="tool/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="tool/reset.css" />
+		<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="tool/My.js" type="text/javascript" charset="utf-8"></script>
+		<script src="tool/vue.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			* {
+			}
+			body {
+				background-color: rgba(54, 117, 252, 0.2);
+			}
+			button.liuyan{
+				position: relative;
+				left: 20px;
+				top: 10px;
+				width: 120px;
+				height: 30px;
+				background-color: skyblue;
+				border: 0;
+				color: white;
+				font-size: 1.2em;
+			}
+			div.liuyans {
+				position: relative;
+				margin-top: 20px;
+				width: 100%;
+			}
+			div.liuyan {
+				position: relative;
+				border: 1px solid black;
+				margin: 40px auto 0 auto;
+				padding: 10px;
+				padding-bottom: 40px;
+				width: 80%;
+			}
+			button.shanchu {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			div.liuyan span{
+				font-weight: bold;
+				font-size: 2em;
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<button type="button" class="liuyan" onclick="window.location = 'liuyan.html'">添加留言</button>
+		<div class="liuyans">
+			<div class="liuyan" v-for="o,i in data" :lid="o.lid">
+				<p>用户：{{o.uname}} &nbsp;&nbsp;&nbsp;&nbsp; 时间：{{time2(o.time)}}  <span>{{o.word}}</span></p>
+				<button type="button" class="btn btn-danger shanchu">删除留言</button>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			var liuyans = new Vue({
+				el: 'div.liuyans',
+				data: {
+					data: []
+				},
+				computed: {
+					time2: function() {
+						return function(time) {
+							return formatDateToYYYY(new Date(time))
+						}
+					}
+				},
+				mounted: function() {
+					ckwt('div.liuyans', 'button.shanchu', function() {
+						var lid = $(this).parents('div.liuyan').attr('lid');
+						crossPost('deleteLiuyan?lid=' + lid, null, (data) => {
+							ifDataReload(data, '删除成功')
+						})
+					})
+				}
+			})
+
+			$(() => {
+				crossPost('getAllLiuyan', null, (data) => {
+					console.log(data);
+					for(var o of data){
+						o.uname = '何赞';
+					}
+					liuyans.data = data;
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/My.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/vue.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		div.head{
+			width: 100%;
+			height: 80px;
+			border-bottom: 1px solid white;
+		}
+		div.head-right{
+			float: right;
+			width: 200px;
+			height: 100%;
+			border-left: 1px solid white;
+			color: greenyellow;
+			text-align: center;
+		}
+		#uname,
+		#score{
+			color: greenyellow;
+		}
+		div.center{
+			width: 100%;
+			min-height: 200px;
+		}
+		table.table{
+			color: greenyellow;
+			border: 1px solid white;
+			text-align: center;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="head">
+		<div class="head-right">
+			<p>会员名
+			<span id="uname">
+				123
+			</span>
+			</p>
+			<p>积分
+			<span id="score">
+				123
+			</span>
+			</p>
+		</div>
+	</div>
+	<div class="center">
+		<table class="table">
+			<tr>
+				<td>复选
+				<input type="checkbox" name="" id="qx" onclick="selectAll()"/>
+				</td>
+				<td>序号</td>
+				<td>姓名</td>
+				<td>用户名</td>
+				<td>密码</td>
+				<td>分数</td>
+				<td>操作</td>
+			</tr>
+			<tr v-for="o,i in data" :uid = "o.uid">
+				<td>
+					<input type="checkbox" name="fuxuan"/>
+				</td>
+				<td>{{i}}</td>
+				<td>{{o.uname}}</td>
+				<td>{{o.username}}</td>
+				<td>{{o.upassword}}</td>
+				<td>{{o.uscore}}</td>
+				<td>
+					<button type="button" class="btn btn-danger shanchu">删除</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<script type="text/javascript">
+		
+		function selectAll(){
+			if($('#qx').prop('checked')){
+				$('input[name=fuxuan]').prop('checked','true')
+			}else{
+				$('input[name=fuxuan]').prop('checked','')
+			}
+		}
+		
+		
+		$(()=>{
+			
+			crossPost('getAllUser',null,(data)=>{
+				new Vue({
+					el:'table.table',
+					data:{
+						data
+					},
+					mounted:function(){
+						ckwt('table','button.shanchu',function(){
+							var uid = $(this).parents('tr').attr('uid');
+							crossPost('deleteByUid',{
+								uid
+							},(data)=>{
+								ifDataReload(data,'删除成功！');
+							})
+						})
+					}
+				})
+			})
+			
+			
+		})
+	</script>
+</body>
+</html>

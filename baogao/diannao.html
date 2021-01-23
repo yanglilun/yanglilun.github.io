@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tool/vue.js" type="text/javascript" charset="utf-8"></script>
+	<title>实验报告，课程设计分享</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+		*{
+			text-align: center;
+		}
+		div.tuiguang{
+			position: fixed;
+			right: 0;
+			top: 40%;
+			z-index: 99;
+		}
+		div.tuiguang a,img{
+			width: 100%;
+			z-index: 100;
+		}
+		div.left{
+			width: 40%;
+			height: 100%;
+			float: left;
+			overflow-y: scroll;
+		}
+		div.right{
+			width: 60%;
+			height: 100%;
+			float: left;
+			overflow-y: hidden;
+		}
+		#web{
+			border: 0;
+			width: 100%;
+			height: 100%;
+		}
+		p.yincang:hover{
+			cursor: pointer;
+			color: red;
+		}
+		span.qq{
+			color: orangered;
+		}
+		th,td{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<div class="tuiguang">
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=14978435&site=qq&menu=yes">
+				<img border="0" src="http://wpa.qq.com/pa?p=2:14978435:53" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+			</a>
+			<p class="text-center yincang" onclick="$('div.tuiguang').hide()">隐藏</p>
+		</div>
+		<h2 class="text-center text-success">计算机科学学院-软件协会 <span style="margin: 50px;font-size: 0.8em;">实验报告，课程设计分享</span></h2>
+		<p class="text-center">实验报告都是自己积累下来的，<span style="color: red;">仅供学习，参考</span>。
+			<span>你抄别人可能也抄，代码资源自己看看，多动手</span>
+		</p>
+		<p class="text-center text-success">如果有未分享的报告可以发给我免费解答。<span style="color: blue;">持续更新中~</span></p>
+		<p>
+			客服1QQ: <span class="qq">14978435</span>
+			客服2QQ：<span class="qq">3308956006</span>
+		</p>
+		<div class="col-xs-3">
+			最近更新
+		</div>
+		<div class="col-xs-9">
+			<marquee behavior="scroll" height="20" direction="left" id="news" scrollamount="8">
+				<p>{{word}}</p>
+			</marquee>
+		</div>
+		<div class="col-xs-4">
+			<div class="input-group">
+				<div class="input-group-addon">筛选课程</div>
+				<select class="form-control" id="cname">
+					<option value ="0" selected="selected">所有课程</option>
+					<option v-for="o of cnames" :value="o">{{o}}</option>
+				</select>
+			</div>		
+		</div>
+		<div class="col-xs-4">
+			<div class="input-group">
+				<div class="input-group-addon">筛选老师</div>
+				<select class="form-control" id="tname">
+					<option value ="0" selected="selected">所有老师</option>
+					<option v-for="o of tnames" :value="o">{{o}}</option>
+				</select>
+			</div>		
+		</div>
+		<div class="col-xs-4">
+			当前报告数<br>
+			<span id="nums" style="color: blue;font-size: 1.2em;"></span>
+		</div>
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th>课程名</th>
+				<th>实验题目</th>
+				<th>学院</th>
+				<th>老师</th>
+				<th>类型</th>
+				<th>操作</th>
+			</tr>
+			<tr v-for="(o,i) of data">
+				<td style="color: red;font-size: 1.2em;">{{o.cname}}</td>
+				<td>{{o.title}}</td>
+				<td>{{o.grade}}</td>
+				<td v-if="o.teacher!=''">{{o.teacher}}</td>
+				<td v-if="o.teacher==''">未知老师</td>
+				<td>{{o.type}}</td>
+				<td>
+					<a target="_blank" :href="'works/'+o.fname" class="btn btn-success">报告</a>
+					<a target="_self" :href="'code/'+o.fname+'.zip'" class="btn btn-info">资源</a>
+				</td>
+			</tr>
+		</table>
+		
+		<!-- <table>
+			<tbody v-for="(o,i) of data">
+				<tr>
+					<td colspan="4"></td>
+				</tr>
+				<tr>
+					<th colspan="2">课程名</th>
+					<th colspan="2">实验题目</th>
+				</tr>
+				<tr>
+					<td colspan="2" style="color: red;font-size: 1.2em;">{{o.cname}}</td>
+					<td colspan="2">{{o.title}}</td>
+				</tr>
+				<tr>
+					<th class="col-xs-2">学院</th>
+					<th class="col-xs-2">老师</th>
+					<th class="col-xs-3">类型</th>
+					<th class="col-xs-5">操作</th>
+				</tr>
+				<tr>
+					<td>{{o.grade}}</td>
+					<td>{{o.teacher}}</td>
+					<td>{{o.type}}</td>
+					<td>
+						<a target="_blank" :href="'works/'+o.fname" class="btn btn-success">报告</a>
+						<a target="_self" :href="'code/'+o.fname+'.zip'" class="btn btn-info">资源</a>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table> -->
+	
+	<script type="text/javascript">
+		var vue1,vue2;
+		$(function(){
+			$.getJSON('data/config.json',(data)=>{
+				new Vue({
+					el:'#news',
+					data:{
+						news:data.news
+					},
+					computed:{
+						word:function(){
+							return this.news.join(' --- ');
+						}
+					}
+				})
+			})
+			
+			$.getJSON('data/data.json',(data)=>{
+				$('#nums').text(data.length);
+				console.log(data);
+				
+				var cnames=[];
+				var tnames=[];
+				for(var o of data){
+					if(cnames.indexOf(o.cname) == -1){
+						cnames.push(o.cname);
+					}
+					if(tnames.indexOf(o.teacher) == -1 && o.teacher!=''){
+						tnames.push(o.teacher);
+					}
+				}
+				tnames.push('未知老师');
+				console.log(cnames.join(','));
+				console.log(tnames.join(','));
+				new Vue({
+					el:'#cname',
+					data:{
+						cnames
+					}
+				})
+				
+				new Vue({
+					el:'#tname',
+					data:{
+						tnames
+					}
+				})
+				
+				vue1 = new Vue({
+					el:'table',
+					data:{
+						data,
+						b:data
+					},
+					mounted: () => {
+						$('#tname').on('change',function(){
+							var tname = $(this).val();
+							if(tname=='未知老师'){
+								tname='';
+							}
+							console.log(tname);
+							if(tname=='0'){
+								vue1.data=vue1.b;
+								return;
+							}else{
+								var arr = [];
+								for(var o of vue1.b){
+									if(o.teacher==tname){
+										arr.push(o);
+										vue1.data=arr;
+									}
+								}
+							}
+						})
+						
+						
+						$('#cname').on('change',function(){
+							var cname = $(this).val();
+							console.log(cname);
+							if(cname==0){
+								vue1.data=vue1.b;
+								return;
+							}else{
+								var arr = [];
+								for(var o of vue1.b){
+									if(o.cname==cname){
+										arr.push(o);
+										vue1.data=arr;
+									}
+								}
+							}
+						})
+					}
+				})
+				
+			})
+		})
+		
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+/*! jQuery Mockjax
+ * A Plugin providing simple and flexible mocking of ajax requests and responses
+ * 
+ * Version: 2.2.1
+ * Home: https://github.com/jakerella/jquery-mockjax
+ * Copyright (c) 2017 Jordan Kasper, formerly appendTo;
+ * NOTE: This repository was taken over by Jordan Kasper (@jakerella) October, 2014
+ * 
+ * Dual licensed under the MIT or GPL licenses.
+ * http://opensource.org/licenses/MIT OR http://www.gnu.org/licenses/gpl-2.0.html
+ */
+(function(root, factory) {
+	'use strict';
+
+	// AMDJS module definition
+	if ( typeof define === 'function' && define.amd && define.amd.jQuery ) {
+		define(['jquery'], function($) {
+			return factory($, root);
+		});
+
+	// CommonJS module definition
+	} else if ( typeof exports === 'object') {
+
+		// NOTE: To use Mockjax as a Node module you MUST provide the factory with
+		// a valid version of jQuery and a window object (the global scope):
+		// var mockjax = require('jquery.mockjax')(jQuery, window);
+
+		module.exports = factory;
+
+	// Global jQuery in web browsers
+	} else {
+		return factory(root.jQuery || root.$, root);
+	}
+}(this, function($, window) {
+	'use strict';
+
+	var _ajax = $.ajax,
+		mockHandlers = [],
+		mockedAjaxCalls = [],
+		unmockedAjaxCalls = [],
+		CALLBACK_REGEX = /=\?(&|$)/,
+		jsc = (new Date()).getTime(),
+		DEFAULT_RESPONSE_TIME = 500;
+
+	// Parse the given XML string.
+	function parseXML(xml) {
+		if ( window.DOMParser === undefined && window.ActiveXObject ) {
+			window.DOMParser = function() { };
+			DOMParser.prototype.parseFromString = function( xmlString ) {
+				var doc = new ActiveXObject('Microsoft.XMLDOM');
+				doc.async = 'false';
+				doc.loadXML( xmlString );
+				return doc;
+			};
+		}
+
+		try {
+			var xmlDoc = ( new DOMParser() ).parseFromString( xml, 'text/xml' );
+			if ( $.isXMLDoc( xmlDoc ) ) {
+				var err = $('parsererror', xmlDoc);
+				if ( err.length === 1 ) {
+					throw new Error('Error: ' + $(xmlDoc).text() );
+				}
+			} else {
+				throw new Error('Unable to parse XML');
+			}
+			return xmlDoc;
+		} catch( e ) {
+			var msg = ( e.name === undefined ? e : e.name + ': ' + e.message );
+			$(document).trigger('xmlParseError', [ msg ]);
+			return undefined;
+		}
+	}
+
+	// Check if the data field on the mock handler and the request match. This
+	// can be used to restrict a mock handler to being used only when a certain
+	// set of data is passed to it.
+	function isMockDataEqual( mock, live ) {
+		logger.debug( mock, ['Checking mock data against request data', mock, live] );
+		var identical = true;
+
+		if ( $.isFunction(mock) ) {
+			return !!mock(live);
+		}
+
+		// Test for situations where the data is a querystring (not an object)
+		if (typeof live === 'string') {
+			// Querystring may be a regex
+			if ($.isFunction( mock.test )) {
+				return mock.test(live);
+			} else if (typeof mock === 'object') {
+				live = getQueryParams(live);
+			} else {
+				return mock === live;
+			}
+		}
+
+		$.each(mock, function(k) {
+			if ( live[k] === undefined ) {
+				identical = false;
+				return identical;
+			} else {
+				if ( typeof live[k] === 'object' && live[k] !== null ) {
+					if ( identical && $.isArray( live[k] ) ) {
+						identical = $.isArray( mock[k] ) && live[k].length === mock[k].length;
+					}
+					identical = identical && isMockDataEqual(mock[k], live[k]);
+				} else {
+					if ( mock[k] && $.isFunction( mock[k].test ) ) {
+						identical = identical && mock[k].test(live[k]);
+					} else {
+						identical = identical && ( mock[k] === live[k] );
+					}
+				}
+			}
+		});
+
+		return identical;
+	}
+
+	function getQueryParams(queryString) {
+		var i, l, param, tmp,
+			paramsObj = {},
+			params = String(queryString).split(/&/);
+
+		for (i=0, l=params.length; i<l; ++i) {
+			param = params[i];
+			try {
+				param = decodeURIComponent(param.replace(/\+/g, ' '));
+				param = param.split(/=/);
+			} catch(e) {
+				// Can't parse this one, so let it go?
+				continue;
+			}
+
+			if (paramsObj[param[0]]) {
+				// this is an array query param (more than one entry in query)
+				if (!paramsObj[param[0]].splice) {
+					// if not already an array, make it one
+					tmp = paramsObj[param[0]];
+					paramsObj[param[0]] = [];
+					paramsObj[param[0]].push(tmp);
+				}
+				paramsObj[param[0]].push(param[1]);
+			} else {
+				paramsObj[param[0]] = param[1];
+			}
+		}
+
+		logger.debug( null, ['Getting query params from string', queryString, paramsObj] );
+
+		return paramsObj;
+	}
+
+	// See if a mock handler property matches the default settings
+	function isDefaultSetting(handler, property) {
+		return handler[property] === $.mockjaxSettings[property];
+	}
+
+	// Check the given handler should mock the given request
+	function getMockForRequest( handler, requestSettings ) {
+		// If the mock was registered with a function, let the function decide if we
+		// want to mock this request
+		if ( $.isFunction(handler) ) {
+			return handler( requestSettings );
+		}
+
+		// Inspect the URL of the request and check if the mock handler's url
+		// matches the url for this ajax request
+		if ( $.isFunction(handler.url.test) ) {
+			// The user provided a regex for the url, test it
+			if ( !handler.url.test( requestSettings.url ) ) {
+				return null;
+			}
+		} else {
+
+			// Apply namespace prefix to the mock handler's url.
+			var namespace = handler.namespace || $.mockjaxSettings.namespace;
+			if (!!namespace) {
+				var namespacedUrl = [
+					namespace.replace(/(\/+)$/, ''),
+					handler.url.replace(/^(\/+)/, '')
+				].join('/');
+				handler.url = namespacedUrl;
+			}
+
+			// Look for a simple wildcard '*' or a direct URL match
+			var star = handler.url.indexOf('*');
+			if (handler.url !== requestSettings.url && star === -1 ||
+					!new RegExp(handler.url.replace(/[-[\]{}()+?.,\\^$|#\s]/g, '\\$&').replace(/\*/g, '.+')).test(requestSettings.url)) {
+				return null;
+			}
+		}
+
+		// Inspect the request headers submitted
+		if ( handler.requestHeaders ) {
+			//No expectation for headers, do not mock this request
+			if (requestSettings.headers === undefined) {
+				return null;
+			} else {
+				var headersMismatch = false;
+				$.each(handler.requestHeaders, function(key, value) {
+					var v = requestSettings.headers[key];
+					if(v !== value) {
+						headersMismatch = true;
+						return false;
+					}
+				});
+				//Headers do not match, do not mock this request
+				if (headersMismatch) {
+					return null;
+				}
+			}
+		}
+
+		// Inspect the data submitted in the request (either POST body or GET query string)
+		if ( handler.data ) {
+			if ( !requestSettings.data || !isMockDataEqual(handler.data, requestSettings.data) ) {
+				// They're not identical, do not mock this request
+				return null;
+			}
+		}
+		// Inspect the request type
+		if ( handler && handler.type &&
+				handler.type.toLowerCase() !== requestSettings.type.toLowerCase() ) {
+			// The request type doesn't match (GET vs. POST)
+			return null;
+		}
+
+		return handler;
+	}
+
+	function isPosNum(value) {
+		return typeof value === 'number' && value >= 0;
+	}
+
+	function parseResponseTimeOpt(responseTime) {
+		if ($.isArray(responseTime) && responseTime.length === 2) {
+			var min = responseTime[0];
+			var max = responseTime[1];
+			if(isPosNum(min) && isPosNum(max)) {
+				return Math.floor(Math.random() * (max - min)) + min;
+			}
+		} else if(isPosNum(responseTime)) {
+			return responseTime;
+		}
+		return DEFAULT_RESPONSE_TIME;
+	}
+
+	// Process the xhr objects send operation
+	function _xhrSend(mockHandler, requestSettings, origSettings) {
+		logger.debug( mockHandler, ['Sending fake XHR request', mockHandler, requestSettings, origSettings] );
+
+		// This is a substitute for < 1.4 which lacks $.proxy
+		var process = (function(that) {
+			return function() {
+				return (function() {
+					// The request has returned
+					this.status = mockHandler.status;
+					this.statusText = mockHandler.statusText;
+					this.readyState	= 1;
+
+					var finishRequest = function () {
+						this.readyState	= 4;
+
+						var onReady;
+						// Copy over our mock to our xhr object before passing control back to
+						// jQuery's onreadystatechange callback
+						if ( requestSettings.dataType === 'json' && ( typeof mockHandler.responseText === 'object' ) ) {
+							this.responseText = JSON.stringify(mockHandler.responseText);
+						} else if ( requestSettings.dataType === 'xml' ) {
+							if ( typeof mockHandler.responseXML === 'string' ) {
+								this.responseXML = parseXML(mockHandler.responseXML);
+								//in jQuery 1.9.1+, responseXML is processed differently and relies on responseText
+								this.responseText = mockHandler.responseXML;
+							} else {
+								this.responseXML = mockHandler.responseXML;
+							}
+						} else if (typeof mockHandler.responseText === 'object' && mockHandler.responseText !== null) {
+							// since jQuery 1.9 responseText type has to match contentType
+							mockHandler.contentType = 'application/json';
+							this.responseText = JSON.stringify(mockHandler.responseText);
+						} else {
+							this.responseText = mockHandler.responseText;
+						}
+						if( typeof mockHandler.status === 'number' || typeof mockHandler.status === 'string' ) {
+							this.status = mockHandler.status;
+						}
+						if( typeof mockHandler.statusText === 'string') {
+							this.statusText = mockHandler.statusText;
+						}
+						// jQuery 2.0 renamed onreadystatechange to onload
+						onReady = this.onload || this.onreadystatechange;
+
+						// jQuery < 1.4 doesn't have onreadystate change for xhr
+						if ( $.isFunction( onReady ) ) {
+							if( mockHandler.isTimeout) {
+								this.status = -1;
+							}
+							onReady.call( this, mockHandler.isTimeout ? 'timeout' : undefined );
+						} else if ( mockHandler.isTimeout ) {
+							// Fix for 1.3.2 timeout to keep success from firing.
+							this.status = -1;
+						}
+					};
+
+					// We have an executable function, call it to give
+					// the mock handler a chance to update it's data
+					if ( $.isFunction(mockHandler.response) ) {
+						// Wait for it to finish
+						if ( mockHandler.response.length === 2 ) {
+							mockHandler.response(origSettings, function () {
+								finishRequest.call(that);
+							});
+							return;
+						} else {
+							mockHandler.response(origSettings);
+						}
+					}
+
+					finishRequest.call(that);
+				}).apply(that);
+			};
+		})(this);
+
+		if ( mockHandler.proxy ) {
+			logger.info( mockHandler, ['Retrieving proxy file: ' + mockHandler.proxy, mockHandler] );
+			// We're proxying this request and loading in an external file instead
+			_ajax({
+				global: false,
+				url: mockHandler.proxy,
+				type: mockHandler.proxyType,
+				data: mockHandler.data,
+				async: requestSettings.async,
+				dataType: requestSettings.dataType === 'script' ? 'text/plain' : requestSettings.dataType,
+				complete: function(xhr) {
+					// Fix for bug #105
+					// jQuery will convert the text to XML for us, and if we use the actual responseXML here
+					// then some other things don't happen, resulting in no data given to the 'success' cb
+					mockHandler.responseXML = mockHandler.responseText = xhr.responseText;
+
+					// Don't override the handler status/statusText if it's specified by the config
+					if (isDefaultSetting(mockHandler, 'status')) {
+						mockHandler.status = xhr.status;
+					}
+					if (isDefaultSetting(mockHandler, 'statusText')) {
+						mockHandler.statusText = xhr.statusText;
+					}
+
+					if ( requestSettings.async === false ) {
+						// TODO: Blocking delay
+						process();
+					} else {
+						this.responseTimer = setTimeout(process, parseResponseTimeOpt(mockHandler.responseTime));
+					}
+				}
+			});
+		} else {
+			// type === 'POST' || 'GET' || 'DELETE'
+			if ( requestSettings.async === false ) {
+				// TODO: Blocking delay
+				process();
+			} else {
+				this.responseTimer = setTimeout(process, parseResponseTimeOpt(mockHandler.responseTime));
+			}
+		}
+
+	}
+
+	// Construct a mocked XHR Object
+	function xhr(mockHandler, requestSettings, origSettings, origHandler) {
+		logger.debug( mockHandler, ['Creating new mock XHR object', mockHandler, requestSettings, origSettings, origHandler] );
+
+		// Extend with our default mockjax settings
+		mockHandler = $.extend(true, {}, $.mockjaxSettings, mockHandler);
+
+		if (typeof mockHandler.headers === 'undefined') {
+			mockHandler.headers = {};
+		}
+		if (typeof requestSettings.headers === 'undefined') {
+			requestSettings.headers = {};
+		}
+		if ( mockHandler.contentType ) {
+			mockHandler.headers['content-type'] = mockHandler.contentType;
+		}
+
+		return {
+			status: mockHandler.status,
+			statusText: mockHandler.statusText,
+			readyState: 1,
+			open: function() { },
+			send: function() {
+				origHandler.fired = true;
+				_xhrSend.call(this, mockHandler, requestSettings, origSettings);
+			},
+			abort: function() {
+				clearTimeout(this.responseTimer);
+			},
+			setRequestHeader: function(header, value) {
+				requestSettings.headers[header] = value;
+			},
+			getResponseHeader: function(header) {
+				// 'Last-modified', 'Etag', 'content-type' are all checked by jQuery
+				if ( mockHandler.headers && mockHandler.headers[header] ) {
+					// Return arbitrary headers
+					return mockHandler.headers[header];
+				} else if ( header.toLowerCase() === 'last-modified' ) {
+					return mockHandler.lastModified || (new Date()).toString();
+				} else if ( header.toLowerCase() === 'etag' ) {
+					return mockHandler.etag || '';
+				} else if ( header.toLowerCase() === 'content-type' ) {
+					return mockHandler.contentType || 'text/plain';
+				}
+			},
+			getAllResponseHeaders: function() {
+				var headers = '';
+				// since jQuery 1.9 responseText type has to match contentType
+				if (mockHandler.contentType) {
+					mockHandler.headers['Content-Type'] = mockHandler.contentType;
+				}
+				$.each(mockHandler.headers, function(k, v) {
+					headers += k + ': ' + v + '\n';
+				});
+				return headers;
+			}
+		};
+	}
+
+	// Process a JSONP mock request.
+	function processJsonpMock( requestSettings, mockHandler, origSettings ) {
+		// Handle JSONP Parameter Callbacks, we need to replicate some of the jQuery core here
+		// because there isn't an easy hook for the cross domain script tag of jsonp
+
+		processJsonpUrl( requestSettings );
+
+		requestSettings.dataType = 'json';
+		if(requestSettings.data && CALLBACK_REGEX.test(requestSettings.data) || CALLBACK_REGEX.test(requestSettings.url)) {
+			createJsonpCallback(requestSettings, mockHandler, origSettings);
+
+			// WHTTP/1.1 404 Not Found
+Date: Tue, 01 Dec 2020 16:21:03 GMT
+Server: nginx/1.10.3
+Content-Type: text/html; charset=utf-8
+Content-Length: 169
+X-Via: 1.1 tjhtapp4.168:8103
+Connection: close
+
+<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.10.3</center>
+</body>
+</html>
