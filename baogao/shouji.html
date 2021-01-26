@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="tool/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="tool/donghua2.css"/>
 	<script src="tool/JQuery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
 	<script src="tool/vue.js" type="text/javascript" charset="utf-8"></script>
 	<title>实验报告，课程设计分享</title>
@@ -31,14 +32,16 @@
 		</a>
 		<p class="text-center" onclick="$('div.tuiguang').hide()">隐藏</p>
 	</div>
-	<h2 class="text-center text-success">计算机科学学院-软件协会</h2>
-	<h3 class="text-center text-info">实验报告，课程设计分享</h3>
-	<p class="text-center">实验报告都是自己积累下来的，<span style="color: red;">仅供学习，参考</span>。</p>
-	<p class="text-center">你抄别人可能也抄，代码资源自己看看，多动手</p>
-	<p class="text-center text-success">如果有未分享的报告可以发给我免费解答</p>
-	<p class="text-center">		
-		<span style="color: orasngered;">持续更新中~</span> QQ:14978435
-	</p>
+	<div class="">
+		<h2 class="text-center text-success">计算机科学学院-软件协会</h2>
+		<h3 class="text-center text-info">实验报告，课程设计分享</h3>
+		<p class="text-center">实验报告都是自己积累下来的，<span style="color: red;">仅供学习，参考</span>。</p>
+		<p class="text-center">你抄别人可能也抄，代码资源自己看看，多动手</p>
+		<p class="text-center text-success">如果有未分享的报告可以发给我免费解答</p>
+		<p class="text-center">		
+			<span style="color: orasngered;">持续更新中~</span> QQ:14978435
+		</p>		
+	</div>
 	<div class="col-xs-3">
 		最近更新
 	</div>
@@ -60,7 +63,7 @@
 		当前报告数<br>
 		<span id="nums" style="color: blue;font-size: 1.2em;"></span>
 	</div>
-	<table class="table table-bordered table-striped">
+	<table class="table table-bordered table-striped  animate__animated animate__zoomIn">
 		<tbody v-for="(o,i) of data">
 			<tr>
 				<td colspan="4"></td>
