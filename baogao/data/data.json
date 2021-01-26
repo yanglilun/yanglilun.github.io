@@ -406,21 +406,21 @@
 		"grade":"计算机科学学院",
 		"fname":"svn.html"
 	},{
-		"cname":"Web前端工程师",
+		"cname":"WEB前端工程师",
 		"title":"基于Bootstrap4.5的响应式注册页面设计",
 		"type":"实验报告",
 		"teacher":"邓燕灵",
 		"grade":"计算机科学学院",
 		"fname":"html-bootstrap.html"
 	},{
-		"cname":"Web前端工程师",
+		"cname":"WEB前端工程师",
 		"title":"基于DIV+CSS的响应式布局网页设计",
 		"type":"实验报告",
 		"teacher":"李文轩",
 		"grade":"计算机科学学院",
 		"fname":"html-bootdiv.html"
 	},{
-		"cname":"Web前端工程师",
+		"cname":"WEB前端工程师",
 		"title":"基于HTML5+CSS3的游戏坛子网站首页的设计",
 		"type":"实验报告",
 		"teacher":"邓燕灵",
